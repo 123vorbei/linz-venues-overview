@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Calendar - Stadt Linz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filters {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filters label {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .filters input[type="checkbox"] {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+        
+        input[type="file"],
+        button {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        button {
+            background: #1976d2;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        
+        button:hover {
+            background: #1565c0;
+        }
+        
+        .summary {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .summary-item strong {
+            display: block;
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        
+        .calendar-wrapper {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        
+        .calendar {
+            display: table;
+            border-collapse: collapse;
+            min-width: 100%;
+            background: white;
+        }
+        
+        .calendar-header {
+            display: table-row;
+            background: #f5f5f5;
+        }
+        
+        .calendar-header-cell {
+            display: table-cell;
+            padding: 12px 8px;
+            font-weight: 600;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            background: #f5f5f5;
+            z-index: 10;
+            min-width: 80px;
+        }
+        
+        .calendar-header-cell.day-header {
+            min-width: 120px;
+            text-align: left;
+            position: sticky;
+            left: 0;
+            z-index: 11;
+            background: #e3f2fd;
+        }
+        
+        .calendar-row {
+            display: table-row;
+        }
+        
+        .calendar-cell {
+            display: table-cell;
+            border: 1px solid #e0e0e0;
+            padding: 4px;
+            vertical-align: top;
+            min-height: 60px;
+            position: relative;
+            min-width: 80px;
+        }
+        
+        .calendar-cell.day-cell {
+            position: sticky;
+            left: 0;
+            background: #fafafa;
+            font-weight: 500;
+            z-index: 5;
+            min-width: 120px;
+        }
+        
+        .calendar-cell.day-cell .day-name {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .calendar-cell.day-cell .day-date {
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        .venue-slot {
+            color: white;
+            padding: 6px 8px;
+            margin: 2px 0;
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .venue-slot.available {
+            background: #4caf50;
+        }
+        
+        .venue-slot.available:hover {
+            background: #45a049;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transform: translateY(-1px);
+        }
+        
+        .venue-slot.blocked {
+            background: #9e9e9e;
+            cursor: default;
+        }
+        
+        .venue-slot.unavailable {
+            background: #ff9800;
+            cursor: default;
+        }
+        
+        .venue-slot.not_offered {
+            background: #e0e0e0;
+            color: #666;
+            cursor: default;
+        }
+        
+        .venue-slot.filtered-out {
+            display: none;
+        }
+        
+        .venue-slot-name {
+            font-weight: 500;
+            margin-bottom: 2px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .venue-slot-time {
+            font-size: 10px;
+            opacity: 0.9;
+        }
+        
+        .venue-slot-price {
+            font-size: 10px;
+            opacity: 0.9;
+            margin-top: 2px;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 60px;
+            color: #999;
+        }
+        
+        /* Tooltip */
+        .venue-tooltip {
+            position: fixed;
+            background: #333;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            z-index: 1000;
+            pointer-events: none;
+            max-width: 300px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+        }
+        
+        .venue-tooltip.show {
+            display: block;
+        }
+        
+        .legend {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .legend-color {
+            display: inline-block;
+            width: 20px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Stadt Linz Venue Calendar</h1>
+        
+        <div class="controls">
+            <input type="file" id="jsonFileInput" accept=".json">
+            <button onclick="loadSampleData()">Load Sample Data</button>
+        </div>
+        
+        <div id="filters" class="filters" style="display: none;">
+            <strong>Show:</strong>
+            <label>
+                <input type="checkbox" id="filterAvailable" checked onchange="applyFilters()">
+                <span class="legend-color" style="background: #4caf50; vertical-align: middle;"></span>
+                Available
+            </label>
+            <label>
+                <input type="checkbox" id="filterUnavailable" checked onchange="applyFilters()">
+                <span class="legend-color" style="background: #ff9800; vertical-align: middle;"></span>
+                Unavailable
+            </label>
+            <label>
+                <input type="checkbox" id="filterBlocked" checked onchange="applyFilters()">
+                <span class="legend-color" style="background: #9e9e9e; vertical-align: middle;"></span>
+                Blocked
+            </label>
+            <label>
+                <input type="checkbox" id="filterNotOffered" checked onchange="applyFilters()">
+                <span class="legend-color" style="background: #e0e0e0; vertical-align: middle;"></span>
+                Not Offered
+            </label>
+        </div>
+        
+        <div id="summary" class="summary" style="display: none;">
+            <div class="summary-item">
+                <div>Date Range</div>
+                <strong id="summaryDateRange">-</strong>
+            </div>
+            <div class="summary-item">
+                <div>Total Days</div>
+                <strong id="summaryDays">-</strong>
+            </div>
+            <div class="summary-item">
+                <div>Time Slots</div>
+                <strong id="summaryTimes">-</strong>
+            </div>
+            <div class="summary-item">
+                <div>Total Availability</div>
+                <strong id="summaryTotal">-</strong>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="no-data">
+                <p>📁 Please load a JSON file with venue calendar data</p>
+                <p style="margin-top: 10px; font-size: 14px;">
+                    Run <code>python venue_scraper_ajax.py</code> to generate the data file
+                </p>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <strong>Slot Status:</strong>
+            <div style="margin-top: 8px;">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #4caf50;"></span>
+                    Available (click to book)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #ff9800;"></span>
+                    Unavailable (too soon/late)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #9e9e9e;"></span>
+                    Blocked/Booked
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #e0e0e0;"></span>
+                    Not offered
+                </div>
+            </div>
+            <div style="margin-top: 12px; font-size: 12px; color: #666;">
+                🕐 Horizontal = Time of day | 📅 Vertical = Day of week
+            </div>
+        </div>
+    </div>
+    
+    <div class="venue-tooltip" id="tooltip"></div>
+    
+    <script>
+        let currentData = null;
+        let tooltip = document.getElementById('tooltip');
+        
+        document.getElementById('jsonFileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        currentData = JSON.parse(e.target.result);
+                        renderCalendar();
+                    } catch (error) {
+                        alert('Error parsing JSON file: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+        
+        function loadSampleData() {
+            // Sample data structure matching the new AJAX format
+            currentData = {
+                "start_date": "20260209",
+                "end_date": "20260215",
+                "total_days": 7,
+                "sorted_times": ["07:00", "08:00", "09:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00"],
+                "sorted_dates": ["20260209", "20260210", "20260211", "20260212", "20260213", "20260214", "20260215"],
+                "calendar_grid": {
+                    "20260209": {
+                        "day_name": "Mon 09.02",
+                        "day_of_week": "Monday",
+                        "date_formatted": "09.02.2026",
+                        "slots_by_time": {
+                            "09:00": [
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-10:00", "price": "10,00", "status": "available", "is_available": true},
+                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "09:00-10:30", "price": "13,00", "status": "unavailable", "is_available": false}
+                            ],
+                            "14:00": [
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "14:00-15:00", "price": null, "status": "blocked", "is_available": false}
+                            ],
+                            "20:00": [
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "20:00-21:00", "price": "13,00", "status": "available", "is_available": true},
+                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "20:00-22:00", "price": "15,00", "status": "not_offered", "is_available": false}
+                            ]
+                        }
+                    },
+                    "20260210": {
+                        "day_name": "Tue 10.02",
+                        "day_of_week": "Tuesday",
+                        "date_formatted": "10.02.2026",
+                        "slots_by_time": {
+                            "08:00": [
+                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "08:00-09:00", "price": "20,00", "status": "available", "is_available": true}
+                            ],
+                            "15:00": [
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "15:00-16:00", "price": null, "status": "unavailable", "is_available": false},
+                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "15:00-17:00", "price": "25,00", "status": "blocked", "is_available": false}
+                            ],
+                            "18:00": [
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "18:00-19:00", "price": "13,00", "status": "available", "is_available": true}
+                            ]
+                        }
+                    },
+                    "20260211": {
+                        "day_name": "Wed 11.02",
+                        "day_of_week": "Wednesday",
+                        "date_formatted": "11.02.2026",
+                        "slots_by_time": {
+                            "07:00": [
+                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "07:00-08:00", "price": "8,00", "status": "not_offered", "is_available": false}
+                            ],
+                            "19:00": [
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "19:00-20:00", "price": "13,00", "status": "available", "is_available": true}
+                            ]
+                        }
+                    },
+                    "20260212": {
+                        "day_name": "Thu 12.02",
+                        "day_of_week": "Thursday",
+                        "date_formatted": "12.02.2026",
+                        "slots_by_time": {
+                            "16:00": [
+                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "16:00-17:00", "price": "13,00", "status": "blocked", "is_available": false}
+                            ],
+                            "21:00": [
+                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "21:00-22:00", "price": "15,00", "status": "available", "is_available": true}
+                            ]
+                        }
+                    },
+                    "20260213": {
+                        "day_name": "Fri 13.02",
+                        "day_of_week": "Friday",
+                        "date_formatted": "13.02.2026",
+                        "slots_by_time": {
+                            "17:00": [
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "17:00-18:00", "price": null, "status": "available", "is_available": true},
+                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "17:00-18:30", "price": "20,00", "status": "unavailable", "is_available": false}
+                            ]
+                        }
+                    },
+                    "20260214": {
+                        "day_name": "Sat 14.02",
+                        "day_of_week": "Saturday",
+                        "date_formatted": "14.02.2026",
+                        "slots_by_time": {
+                            "09:00": [
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-11:00", "price": "10,00", "status": "available", "is_available": true}
+                            ],
+                            "14:00": [
+                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "14:00-16:00", "price": "25,00", "status": "not_offered", "is_available": false}
+                            ]
+                        }
+                    },
+                    "20260215": {
+                        "day_name": "Sun 15.02",
+                        "day_of_week": "Sunday",
+                        "date_formatted": "15.02.2026",
+                        "slots_by_time": {
+                            "10:00": [
+                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "10:00-12:00", "price": "8,00", "status": "blocked", "is_available": false}
+                            ]
+                        }
+                    }
+                }
+            };
+            renderCalendar();
+        }
+        
+        function renderCalendar() {
+            if (!currentData) return;
+            
+            // Show filters
+            document.getElementById('filters').style.display = 'flex';
+            
+            // Update summary
+            document.getElementById('summary').style.display = 'grid';
+            const startDate = formatDate(currentData.start_date);
+            const endDate = formatDate(currentData.end_date);
+            document.getElementById('summaryDateRange').textContent = `${startDate} - ${endDate}`;
+            document.getElementById('summaryDays').textContent = currentData.total_days;
+            document.getElementById('summaryTimes').textContent = currentData.sorted_times.length;
+            
+            // Calculate total slots
+            let totalSlots = 0;
+            currentData.sorted_dates.forEach(date => {
+                const dayData = currentData.calendar_grid[date];
+                Object.values(dayData.slots_by_time).forEach(venues => {
+                    totalSlots += venues.length;
+                });
+            });
+            document.getElementById('summaryTotal').textContent = totalSlots;
+            
+            // Build calendar
+            const content = document.getElementById('content');
+            content.innerHTML = '';
+            
+            const calendarWrapper = document.createElement('div');
+            calendarWrapper.className = 'calendar-wrapper';
+            
+            const calendar = document.createElement('div');
+            calendar.className = 'calendar';
+            
+            // Header row
+            const headerRow = document.createElement('div');
+            headerRow.className = 'calendar-header';
+            
+            // Empty cell for day column
+            const emptyHeader = document.createElement('div');
+            emptyHeader.className = 'calendar-header-cell day-header';
+            emptyHeader.textContent = 'Day';
+            headerRow.appendChild(emptyHeader);
+            
+            // Time headers
+            currentData.sorted_times.forEach(time => {
+                const timeHeader = document.createElement('div');
+                timeHeader.className = 'calendar-header-cell';
+                timeHeader.textContent = time;
+                headerRow.appendChild(timeHeader);
+            });
+            
+            calendar.appendChild(headerRow);
+            
+            // Day rows
+            currentData.sorted_dates.forEach(date => {
+                const dayData = currentData.calendar_grid[date];
+                const row = document.createElement('div');
+                row.className = 'calendar-row';
+                
+                // Day cell
+                const dayCell = document.createElement('div');
+                dayCell.className = 'calendar-cell day-cell';
+                dayCell.innerHTML = `
+                    <div class="day-name">${dayData.day_name}</div>
+                    <div class="day-date">${dayData.day_of_week}</div>
+                `;
+                row.appendChild(dayCell);
+                
+                // Time slot cells
+                currentData.sorted_times.forEach(time => {
+                    const cell = document.createElement('div');
+                    cell.className = 'calendar-cell';
+                    
+                    const venues = dayData.slots_by_time[time] || [];
+                    
+                    venues.forEach(venue => {
+                        const slot = createVenueSlot(venue, dayData.date_formatted);
+                        cell.appendChild(slot);
+                    });
+                    
+                    row.appendChild(cell);
+                });
+                
+                calendar.appendChild(row);
+            });
+            
+            calendarWrapper.appendChild(calendar);
+            content.appendChild(calendarWrapper);
+        }
+        
+        function applyFilters() {
+            const showAvailable = document.getElementById('filterAvailable').checked;
+            const showUnavailable = document.getElementById('filterUnavailable').checked;
+            const showBlocked = document.getElementById('filterBlocked').checked;
+            const showNotOffered = document.getElementById('filterNotOffered').checked;
+            
+            // Get all venue slots
+            const slots = document.querySelectorAll('.venue-slot');
+            
+            slots.forEach(slot => {
+                const status = slot.classList.contains('available') ? 'available' :
+                              slot.classList.contains('unavailable') ? 'unavailable' :
+                              slot.classList.contains('blocked') ? 'blocked' :
+                              slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
+                
+                let shouldShow = false;
+                
+                if (status === 'available' && showAvailable) shouldShow = true;
+                if (status === 'unavailable' && showUnavailable) shouldShow = true;
+                if (status === 'blocked' && showBlocked) shouldShow = true;
+                if (status === 'not_offered' && showNotOffered) shouldShow = true;
+                
+                if (shouldShow) {
+                    slot.classList.remove('filtered-out');
+                } else {
+                    slot.classList.add('filtered-out');
+                }
+            });
+        }
+        
+        function createVenueSlot(venue, date) {
+            const slot = document.createElement('div');
+            slot.className = 'venue-slot';
+            
+            // Add status class
+            const status = venue.status || 'available';
+            slot.classList.add(status);
+            
+            const name = document.createElement('div');
+            name.className = 'venue-slot-name';
+            name.textContent = venue.venue_name;
+            slot.appendChild(name);
+            
+            const time = document.createElement('div');
+            time.className = 'venue-slot-time';
+            time.textContent = venue.time_range;
+            slot.appendChild(time);
+            
+            if (venue.price) {
+                const price = document.createElement('div');
+                price.className = 'venue-slot-price';
+                price.textContent = `€ ${venue.price}`;
+                slot.appendChild(price);
+            }
+            
+            // Add status indicator
+            const statusText = {
+                'available': '✓ Available',
+                'blocked': '✗ Blocked',
+                'unavailable': '⏰ Too soon',
+                'not_offered': '– Not offered'
+            };
+            
+            if (status !== 'available') {
+                const statusDiv = document.createElement('div');
+                statusDiv.className = 'venue-slot-time';
+                statusDiv.style.fontSize = '9px';
+                statusDiv.style.opacity = '0.8';
+                statusDiv.textContent = statusText[status] || status;
+                slot.appendChild(statusDiv);
+            }
+            
+            // Add hover tooltip
+            slot.addEventListener('mouseenter', (e) => showTooltip(e, venue, date, status));
+            slot.addEventListener('mouseleave', hideTooltip);
+            slot.addEventListener('mousemove', (e) => moveTooltip(e));
+            
+            // Click to open booking only if available
+            if (venue.is_available !== false) {
+                slot.addEventListener('click', () => {
+                    const url = `https://book.venuzle.at/stadt-linz/venues/v/${venue.venue_id}/`;
+                    window.open(url, '_blank');
+                });
+            }
+            
+            return slot;
+        }
+        
+        function showTooltip(e, venue, date, status) {
+            const statusEmoji = {
+                'available': '✅',
+                'blocked': '🚫',
+                'unavailable': '⏰',
+                'not_offered': '➖'
+            };
+            
+            const statusText = {
+                'available': 'Available - Click to book',
+                'blocked': 'Already booked',
+                'unavailable': 'Cannot book yet (too soon/late)',
+                'not_offered': 'Venue not offered at this time'
+            };
+            
+            tooltip.className = 'venue-tooltip show';
+            tooltip.innerHTML = `
+                <strong>${venue.venue_name}</strong><br>
+                <small>ID: ${venue.venue_id}</small><br>
+                📅 ${date}<br>
+                🕐 ${venue.time_range}<br>
+                ${venue.price ? '💰 €' + venue.price : '💰 Free'}<br>
+                ${statusEmoji[status] || ''} <em style="opacity: 0.9;">${statusText[status] || status}</em>
+            `;
+            moveTooltip(e);
+        }
+        
+        function hideTooltip() {
+            tooltip.className = 'venue-tooltip';
+        }
+        
+        function moveTooltip(e) {
+            tooltip.style.left = (e.pageX + 15) + 'px';
+            tooltip.style.top = (e.pageY + 15) + 'px';
+        }
+        
+        function formatDate(dateStr) {
+            if (!dateStr) return '-';
+            const year = dateStr.substring(0, 4);
+            const month = dateStr.substring(4, 6);
+            const day = dateStr.substring(6, 8);
+            return `${day}.${month}.${year}`;
+        }
+    </script>
+</body>
+</html>
