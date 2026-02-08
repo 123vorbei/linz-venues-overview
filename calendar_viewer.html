@@ -82,6 +82,71 @@
             background: #1565c0;
         }
         
+        /* Split button styling */
+        .split-button-group {
+            display: inline-flex;
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .split-button-main {
+            border-radius: 4px 0 0 4px !important;
+            border-right: none;
+            flex: 1;
+            padding: 10px 20px;
+        }
+        
+        .split-button-toggle {
+            border-radius: 0 4px 4px 0 !important;
+            border-left: 1px solid rgba(255,255,255,0.3);
+            padding: 10px 12px;
+            min-width: 40px;
+            font-size: 12px;
+        }
+        
+        .split-button-toggle:hover {
+            background: #1565c0;
+        }
+        
+        /* Dropdown menu */
+        .split-button-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+        
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 0;
+            background: white;
+            color: #333;
+            text-align: left;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: normal;
+            transition: background 0.2s;
+        }
+        
+        .dropdown-item:hover {
+            background: #f5f5f5;
+            color: #1976d2;
+        }
+        
+        .dropdown-item:not(:last-child) {
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
         .summary {
             background: #e3f2fd;
             padding: 15px;
@@ -101,7 +166,9 @@
         
         .calendar-wrapper {
             overflow-x: auto;
+            overflow-y: auto;
             margin-top: 20px;
+            max-height: 65vh;
         }
         
         .calendar {
@@ -109,6 +176,7 @@
             border-collapse: collapse;
             min-width: 100%;
             background: white;
+            table-layout: auto;
         }
         
         .calendar-header {
@@ -126,11 +194,13 @@
             top: 0;
             background: #f5f5f5;
             z-index: 10;
-            min-width: 80px;
+            min-width: 70px;
+            width: 70px;
         }
         
         .calendar-header-cell.day-header {
             min-width: 120px;
+            width: 120px;
             text-align: left;
             position: sticky;
             left: 0;
@@ -149,7 +219,8 @@
             vertical-align: top;
             min-height: 60px;
             position: relative;
-            min-width: 80px;
+            min-width: 70px;
+            width: 70px;
         }
         
         .calendar-cell.day-cell {
@@ -159,6 +230,7 @@
             font-weight: 500;
             z-index: 5;
             min-width: 120px;
+            width: 120px;
         }
         
         .calendar-cell.day-cell .day-name {
@@ -199,7 +271,7 @@
         }
         
         .venue-slot.unavailable {
-            background: #ff9800;
+            background: #8bda8b;
             cursor: default;
         }
         
@@ -286,29 +358,39 @@
         <h1>📅 Stadt Linz Venue Calendar</h1>
         
         <div class="controls">
-            <input type="file" id="jsonFileInput" accept=".json">
-            <button onclick="loadSampleData()">Load Sample Data</button>
+            <div class="split-button-group">
+                <button class="split-button-main" id="loadDataBtn">📥 Load Data</button>
+                <button class="split-button-toggle" id="loadDataToggle">▼</button>
+                <div class="split-button-dropdown" id="loadDataDropdown" style="display: none;">
+                    <button class="dropdown-item" id="browseFileBtn">📂 Browse for file…</button>
+                    <button class="dropdown-item" id="loadExampleBtn">📊 Load example data</button>
+                    <button class="dropdown-item" id="loadCustomBtn">🔗 Load from custom path…</button>
+                </div>
+            </div>
+            <div style="display: none;">
+                <input type="file" id="jsonFileInput" accept=".json">
+            </div>
         </div>
         
         <div id="filters" class="filters" style="display: none;">
             <strong>Show:</strong>
             <label>
-                <input type="checkbox" id="filterAvailable" checked onchange="applyFilters()">
+                <input type="checkbox" id="filterAvailable" onchange="applyFilters()">
                 <span class="legend-color" style="background: #4caf50; vertical-align: middle;"></span>
                 Available
             </label>
             <label>
-                <input type="checkbox" id="filterUnavailable" checked onchange="applyFilters()">
-                <span class="legend-color" style="background: #ff9800; vertical-align: middle;"></span>
+                <input type="checkbox" id="filterUnavailable" onchange="applyFilters()">
+                <span class="legend-color" style="background: #8bda8b; vertical-align: middle;"></span>
                 Unavailable
             </label>
             <label>
-                <input type="checkbox" id="filterBlocked" checked onchange="applyFilters()">
+                <input type="checkbox" id="filterBlocked" onchange="applyFilters()">
                 <span class="legend-color" style="background: #9e9e9e; vertical-align: middle;"></span>
                 Blocked
             </label>
             <label>
-                <input type="checkbox" id="filterNotOffered" checked onchange="applyFilters()">
+                <input type="checkbox" id="filterNotOffered" onchange="applyFilters()">
                 <span class="legend-color" style="background: #e0e0e0; vertical-align: middle;"></span>
                 Not Offered
             </label>
@@ -350,7 +432,7 @@
                     Available (click to book)
                 </div>
                 <div class="legend-item">
-                    <span class="legend-color" style="background: #ff9800;"></span>
+                    <span class="legend-color" style="background: #8bda8b;"></span>
                     Unavailable (too soon/late)
                 </div>
                 <div class="legend-item">
@@ -374,6 +456,7 @@
         let currentData = null;
         let tooltip = document.getElementById('tooltip');
         
+        // File input handler - used by browse button
         document.getElementById('jsonFileInput').addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (file) {
@@ -390,6 +473,94 @@
             }
         });
         
+        // Split button handlers
+        document.getElementById('loadDataBtn').addEventListener('click', function() {
+            tryLoadRemoteData('./venue_calendar.json');
+        });
+        
+        document.getElementById('loadDataToggle').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdown = document.getElementById('loadDataDropdown');
+            const isVisible = dropdown.style.display !== 'none';
+            dropdown.style.display = isVisible ? 'none' : 'block';
+        });
+        
+        document.getElementById('browseFileBtn').addEventListener('click', function() {
+            closeSplitDropdown();
+            document.getElementById('jsonFileInput').click();
+        });
+        
+        document.getElementById('loadExampleBtn').addEventListener('click', function() {
+            closeSplitDropdown();
+            loadSampleData();
+        });
+        
+        document.getElementById('loadCustomBtn').addEventListener('click', function() {
+            closeSplitDropdown();
+            const customPath = prompt('Enter the URL or path to the JSON file:', './venue_calendar.json');
+            if (customPath) {
+                tryLoadRemoteData(customPath);
+            }
+        });
+        
+        // Close dropdown when clicking elsewhere on the page
+        document.addEventListener('click', function(e) {
+            const splitGroup = document.querySelector('.split-button-group');
+            const dropdown = document.getElementById('loadDataDropdown');
+            // Only close if click is outside the button group
+            if (splitGroup && !splitGroup.contains(e.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+        
+        function closeSplitDropdown() {
+            document.getElementById('loadDataDropdown').style.display = 'none';
+        }
+        
+        function tryLoadRemoteData(url) {
+            // Check if we're in file:// protocol
+            if (window.location.protocol === 'file:') {
+                // For local file:// protocol, open file picker instead
+                document.getElementById('jsonFileInput').click();
+                return;
+            }
+            
+            // Show loading indicator
+            const btn = document.getElementById('loadDataBtn');
+            const originalText = btn.textContent;
+            btn.textContent = '⏳ Loading...';
+            btn.disabled = true;
+            
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    currentData = data;
+                    renderCalendar();
+                    btn.textContent = '✅ Data Loaded!';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }, 2000);
+                })
+                .catch(error => {
+                    console.error('Error loading remote data:', error);
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    
+                    // Offer fallback options
+                    if (confirm(`Failed to load data from ${url}:\n${error.message}\n\nWould you like to load sample data instead?`)) {
+                        loadSampleData();
+                    } else {
+                        alert('You can:\n1. Use "📂 Browse for file…" to load a local JSON file\n2. Make sure venue_calendar.json is in the same directory as calendar_viewer.html\n3. Use "🔗 Load from custom path…" to specify a different location');
+                    }
+                });
+        }
+        
         function loadSampleData() {
             // Sample data structure matching the new AJAX format
             currentData = {
@@ -405,15 +576,15 @@
                         "date_formatted": "09.02.2026",
                         "slots_by_time": {
                             "09:00": [
-                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-10:00", "price": "10,00", "status": "available", "is_available": true},
-                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "09:00-10:30", "price": "13,00", "status": "unavailable", "is_available": false}
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-10:00", "price": "10,00", "status": "available", "is_available": true, "reason": null},
+                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "09:00-10:30", "price": "13,00", "status": "unavailable", "is_available": false, "reason": "Cannot be booked yet (too late)"}
                             ],
                             "14:00": [
-                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "14:00-15:00", "price": null, "status": "blocked", "is_available": false}
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "14:00-15:00", "price": null, "status": "blocked", "is_available": false, "reason": "Already booked"}
                             ],
                             "20:00": [
-                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "20:00-21:00", "price": "13,00", "status": "available", "is_available": true},
-                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "20:00-22:00", "price": "15,00", "status": "not_offered", "is_available": false}
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "20:00-21:00", "price": "13,00", "status": "available", "is_available": true, "reason": null},
+                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "20:00-22:00", "price": "15,00", "status": "not_offered", "is_available": false, "reason": "Venue not available at this time"}
                             ]
                         }
                     },
@@ -423,14 +594,14 @@
                         "date_formatted": "10.02.2026",
                         "slots_by_time": {
                             "08:00": [
-                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "08:00-09:00", "price": "20,00", "status": "available", "is_available": true}
+                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "08:00-09:00", "price": "20,00", "status": "available", "is_available": true, "reason": null}
                             ],
                             "15:00": [
-                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "15:00-16:00", "price": null, "status": "unavailable", "is_available": false},
-                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "15:00-17:00", "price": "25,00", "status": "blocked", "is_available": false}
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "15:00-16:00", "price": null, "status": "unavailable", "is_available": false, "reason": "Too soon to book"},
+                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "15:00-17:00", "price": "25,00", "status": "blocked", "is_available": false, "reason": "Fully booked"}
                             ],
                             "18:00": [
-                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "18:00-19:00", "price": "13,00", "status": "available", "is_available": true}
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "18:00-19:00", "price": "13,00", "status": "available", "is_available": true, "reason": null}
                             ]
                         }
                     },
@@ -440,10 +611,10 @@
                         "date_formatted": "11.02.2026",
                         "slots_by_time": {
                             "07:00": [
-                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "07:00-08:00", "price": "8,00", "status": "not_offered", "is_available": false}
+                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "07:00-08:00", "price": "8,00", "status": "not_offered", "is_available": false, "reason": "Closed during this period"}
                             ],
                             "19:00": [
-                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "19:00-20:00", "price": "13,00", "status": "available", "is_available": true}
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "19:00-20:00", "price": "13,00", "status": "available", "is_available": true, "reason": null}
                             ]
                         }
                     },
@@ -453,10 +624,10 @@
                         "date_formatted": "12.02.2026",
                         "slots_by_time": {
                             "16:00": [
-                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "16:00-17:00", "price": "13,00", "status": "blocked", "is_available": false}
+                                {"venue_id": 88, "venue_name": "Sportanlage West", "time_range": "16:00-17:00", "price": "13,00", "status": "blocked", "is_available": false, "reason": "Reserved for event"}
                             ],
                             "21:00": [
-                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "21:00-22:00", "price": "15,00", "status": "available", "is_available": true}
+                                {"venue_id": 89, "venue_name": "Sporthalle Süd", "time_range": "21:00-22:00", "price": "15,00", "status": "available", "is_available": true, "reason": null}
                             ]
                         }
                     },
@@ -466,8 +637,8 @@
                         "date_formatted": "13.02.2026",
                         "slots_by_time": {
                             "17:00": [
-                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "17:00-18:00", "price": null, "status": "available", "is_available": true},
-                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "17:00-18:30", "price": "20,00", "status": "unavailable", "is_available": false}
+                                {"venue_id": 87, "venue_name": "Wissensturm Seminarraum", "time_range": "17:00-18:00", "price": null, "status": "available", "is_available": true, "reason": null},
+                                {"venue_id": 90, "venue_name": "Tennishalle", "time_range": "17:00-18:30", "price": "20,00", "status": "unavailable", "is_available": false, "reason": "Maintenance scheduled"}
                             ]
                         }
                     },
@@ -477,10 +648,10 @@
                         "date_formatted": "14.02.2026",
                         "slots_by_time": {
                             "09:00": [
-                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-11:00", "price": "10,00", "status": "available", "is_available": true}
+                                {"venue_id": 86, "venue_name": "Robinsonschule - Turnsaal", "time_range": "09:00-11:00", "price": "10,00", "status": "available", "is_available": true, "reason": null}
                             ],
                             "14:00": [
-                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "14:00-16:00", "price": "25,00", "status": "not_offered", "is_available": false}
+                                {"venue_id": 91, "venue_name": "Volkshaus Saal", "time_range": "14:00-16:00", "price": "25,00", "status": "not_offered", "is_available": false, "reason": "Weekend hours not available"}
                             ]
                         }
                     },
@@ -490,7 +661,7 @@
                         "date_formatted": "15.02.2026",
                         "slots_by_time": {
                             "10:00": [
-                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "10:00-12:00", "price": "8,00", "status": "blocked", "is_available": false}
+                                {"venue_id": 92, "venue_name": "Fitnesshalle", "time_range": "10:00-12:00", "price": "8,00", "status": "blocked", "is_available": false, "reason": "Fully booked"}
                             ]
                         }
                     }
@@ -588,6 +759,28 @@
             
             calendarWrapper.appendChild(calendar);
             content.appendChild(calendarWrapper);
+            
+            // Initialize filters after calendar is rendered
+            initializeFilters();
+        }
+        
+        function initializeFilters() {
+            // Default filter state: show only available + unavailable
+            const defaultFilters = {
+                filterAvailable: true,
+                filterUnavailable: true,
+                filterBlocked: false,
+                filterNotOffered: false
+            };
+            
+            // Apply default filters
+            document.getElementById('filterAvailable').checked = defaultFilters.filterAvailable;
+            document.getElementById('filterUnavailable').checked = defaultFilters.filterUnavailable;
+            document.getElementById('filterBlocked').checked = defaultFilters.filterBlocked;
+            document.getElementById('filterNotOffered').checked = defaultFilters.filterNotOffered;
+            
+            // Apply the filters immediately
+            applyFilters();
         }
         
         function applyFilters() {
@@ -693,14 +886,28 @@
                 'not_offered': 'Venue not offered at this time'
             };
             
+            // Format price: show '-' if null/None, otherwise format as currency
+            let priceDisplayText = '';
+            if (venue.price === null || venue.price === 'None' || venue.price === undefined || venue.price === '') {
+                priceDisplayText = '💰 -';
+            } else {
+                priceDisplayText = '💰 €' + venue.price;
+            }
+            
+            // Build reason text if available
+            let reasonText = '';
+            if (venue.reason && venue.reason !== null && venue.reason !== 'None' && venue.reason.trim() !== '') {
+                reasonText = `<br>📝 ${venue.reason}`;
+            }
+            
             tooltip.className = 'venue-tooltip show';
             tooltip.innerHTML = `
                 <strong>${venue.venue_name}</strong><br>
                 <small>ID: ${venue.venue_id}</small><br>
                 📅 ${date}<br>
                 🕐 ${venue.time_range}<br>
-                ${venue.price ? '💰 €' + venue.price : '💰 Free'}<br>
-                ${statusEmoji[status] || ''} <em style="opacity: 0.9;">${statusText[status] || status}</em>
+                ${priceDisplayText}<br>
+                ${statusEmoji[status] || ''} <em style="opacity: 0.9;">${statusText[status] || status}</em>${reasonText}
             `;
             moveTooltip(e);
         }

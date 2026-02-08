@@ -159,6 +159,11 @@ class VenueCalendarAggregator:
             onclick = cell.get('onclick', '')
             price = cell.get_text(strip=True)
             
+            # Extract reason from title, aria-label, or other attributes
+            reason = cell.get('title', '') or cell.get('aria-label', '') or None
+            if reason:
+                reason = reason.strip() or None
+            
             # Check if it's available
             is_available = False
             if onclick and 'book' in onclick:
@@ -192,7 +197,8 @@ class VenueCalendarAggregator:
                     'time_to': hour_to_str,
                     'price': price if price and price != '&nbsp;' else None,
                     'status': slot_type,
-                    'is_available': is_available
+                    'is_available': is_available,
+                    'reason': reason
                 })
             
             cell_index += colspan
@@ -262,7 +268,8 @@ class VenueCalendarAggregator:
                         'time_to': slot['time_to'],
                         'price': slot['price'],
                         'status': slot.get('status', 'unknown'),
-                        'is_available': slot.get('is_available', False)
+                        'is_available': slot.get('is_available', False),
+                        'reason': slot.get('reason', None)
                     })
         
         # Sort times
