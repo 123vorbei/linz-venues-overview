@@ -1,0 +1,40 @@
+name: Run Venue Scraper
+
+on:
+  schedule:
+    # Run at 7:00 UTC
+    - cron: '0 7 * * *'
+    # Run at 12:00 UTC
+    - cron: '0 12 * * *'
+    # Run at 18:00 UTC
+    - cron: '0 18 * * *'
+    # Run at 22:00 UTC
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+      
+      - name: Run scraper
+        run: python venue_scraper_ajax.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add venue_calendar.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update venue calendar - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)
