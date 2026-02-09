@@ -747,7 +747,7 @@
                     const venues = dayData.slots_by_time[time] || [];
                     
                     venues.forEach(venue => {
-                        const slot = createVenueSlot(venue, dayData.date_formatted);
+                        const slot = createVenueSlot(venue, date);
                         cell.appendChild(slot);
                     });
                     
@@ -863,7 +863,7 @@
             // Click to open booking only if available
             if (venue.is_available !== false) {
                 slot.addEventListener('click', () => {
-                    const url = `https://book.venuzle.at/stadt-linz/venues/v/${venue.venue_id}/`;
+                    const url = `https://book.venuzle.at/stadt-linz/venues/v/${venue.venue_id}/${date}/`;
                     window.open(url, '_blank');
                 });
             }
@@ -904,7 +904,7 @@
             tooltip.innerHTML = `
                 <strong>${venue.venue_name}</strong><br>
                 <small>ID: ${venue.venue_id}</small><br>
-                📅 ${date}<br>
+                📅 ${formatDate(date)}<br>
                 🕐 ${venue.time_range}<br>
                 ${priceDisplayText}<br>
                 ${statusEmoji[status] || ''} <em style="opacity: 0.9;">${statusText[status] || status}</em>${reasonText}
