@@ -225,7 +225,7 @@ class VenueCalendarAggregator:
             day_data = self.get_day_availability(date_str, cluster_id)
             all_days_data.append(day_data)
             
-            time.sleep(0.5)  # Be polite to the server
+            time.sleep(0.1)  # Be polite to the server
         
         return self._process_week_data(all_days_data)
     
@@ -306,10 +306,10 @@ def main():
     aggregator = VenueCalendarAggregator()
     
     # Fetch a week of availability starting from a specific date
-    start_date = "20260209"  # Format: YYYYMMDD (Feb 9, 2026)
+    start_date = datetime.now().strftime("%Y%m%d")  # Format: YYYYMMDD (today's date)
     
-    # Get 7 days (one week)
-    results = aggregator.get_week_availability(start_date, days=7)
+    # Get 28 days (two weeks)
+    results = aggregator.get_week_availability(start_date, days=28)
     
     # Save to file
     aggregator.save_results(results)
