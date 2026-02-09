@@ -855,14 +855,68 @@
                 slot.appendChild(statusDiv);
             }
             
-            // Add hover tooltip
+            // Add hover tooltip (mouse) and touch handlers (mobile)
             slot.addEventListener('mouseenter', (e) => showTooltip(e, venue, date, status));
             slot.addEventListener('mouseleave', hideTooltip);
             slot.addEventListener('mousemove', (e) => moveTooltip(e));
-            
-            // Click to open booking only if available
+
+            // Touch handling: long-press (hold without moving) shows tooltip; short tap opens link.
+            let suppressClick = false;
+            let longPressTimer = null;
+            let longPressTriggered = false;
+            let startX = 0, startY = 0;
+            const LONG_PRESS_MS = 600;
+            const MOVE_TOLERANCE = 10; // px
+
+            slot.addEventListener('touchstart', (e) => {
+                if (!e.touches || !e.touches[0]) return;
+                const t = e.touches[0];
+                startX = t.clientX; startY = t.clientY;
+                longPressTriggered = false;
+                // start long-press timer
+                longPressTimer = setTimeout(() => {
+                    longPressTriggered = true;
+                    suppressClick = true; // prevent click after long-press
+                    // show tooltip at touch point
+                    showTooltip(t, venue, date, status);
+                }, LONG_PRESS_MS);
+            }, {passive: true});
+
+            slot.addEventListener('touchmove', (e) => {
+                if (!e.touches || !e.touches[0]) return;
+                const t = e.touches[0];
+                const dx = Math.abs(t.clientX - startX);
+                const dy = Math.abs(t.clientY - startY);
+                // if user moved beyond tolerance before long-press, cancel long-press (allow scrolling)
+                if (!longPressTriggered && (dx > MOVE_TOLERANCE || dy > MOVE_TOLERANCE)) {
+                    if (longPressTimer) { clearTimeout(longPressTimer); longPressTimer = null; }
+                }
+                // if tooltip is visible due to long-press, let it follow the finger (but still allow scrolling)
+                if (longPressTriggered) {
+                    moveTooltip(t);
+                }
+            }, {passive: true});
+
+            slot.addEventListener('touchend', (e) => {
+                // touch ended: cancel pending timer
+                if (longPressTimer) { clearTimeout(longPressTimer); longPressTimer = null; }
+                if (longPressTriggered) {
+                    // keep tooltip visible briefly then hide and re-enable clicks
+                    setTimeout(() => {
+                        hideTooltip();
+                        suppressClick = false;
+                        longPressTriggered = false;
+                    }, 1200);
+                }
+            });
+
+            // Click to open booking only if available and not suppressed by a recent touch
             if (venue.is_available !== false) {
-                slot.addEventListener('click', () => {
+                slot.addEventListener('click', (ev) => {
+                    if (suppressClick) {
+                        ev.preventDefault();
+                        return;
+                    }
                     const url = `https://book.venuzle.at/stadt-linz/venues/v/${venue.venue_id}/${date}/`;
                     window.open(url, '_blank');
                 });
@@ -909,6 +963,7 @@
                 ${priceDisplayText}<br>
                 ${statusEmoji[status] || ''} <em style="opacity: 0.9;">${statusText[status] || status}</em>${reasonText}
             `;
+            // Position tooltip using viewport coordinates (clientX/clientY)
             moveTooltip(e);
         }
         
@@ -917,8 +972,36 @@
         }
         
         function moveTooltip(e) {
-            tooltip.style.left = (e.pageX + 15) + 'px';
-            tooltip.style.top = (e.pageY + 15) + 'px';
+            // Accept MouseEvent or Touch object
+            let clientX = e.clientX;
+            let clientY = e.clientY;
+            if ((clientX === undefined || clientY === undefined) && e.touches && e.touches[0]) {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            }
+            if (clientX === undefined || clientY === undefined) return;
+
+            const offset = 12;
+            // Default position to bottom-right of pointer
+            let left = clientX + offset;
+            let top = clientY + offset;
+
+            // Clamp to viewport right edge
+            const ttWidth = tooltip.offsetWidth || 200;
+            const ttHeight = tooltip.offsetHeight || 80;
+            if (left + ttWidth + 8 > window.innerWidth) {
+                left = clientX - ttWidth - offset;
+            }
+            // Clamp to viewport bottom edge
+            if (top + ttHeight + 8 > window.innerHeight) {
+                top = clientY - ttHeight - offset;
+            }
+            // Ensure tooltip stays visible
+            left = Math.max(8, left);
+            top = Math.max(8, top);
+
+            tooltip.style.left = left + 'px';
+            tooltip.style.top = top + 'px';
         }
         
         function formatDate(dateStr) {
