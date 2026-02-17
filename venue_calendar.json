@@ -19475,10 +19475,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "10:00-11:00",
             "time_to": "11:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -19677,10 +19677,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "11:00-12:00",
             "time_to": "12:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -19879,10 +19879,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "12:00-13:00",
             "time_to": "13:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -20081,10 +20081,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "13:00-14:00",
             "time_to": "14:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -20283,10 +20283,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "14:00-15:00",
             "time_to": "15:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -21403,10 +21403,10 @@
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 50,
@@ -81059,7 +81059,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:49.557563"
+      "fetched_at": "2026-02-17T18:58:43.366190"
     },
     {
       "date": "20260218",
@@ -83069,7 +83069,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:50.848429"
+      "fetched_at": "2026-02-17T18:58:44.748313"
     },
     {
       "date": "20260219",
@@ -85079,7 +85079,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:52.138638"
+      "fetched_at": "2026-02-17T18:58:46.042381"
     },
     {
       "date": "20260220",
@@ -87044,7 +87044,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:53.421996"
+      "fetched_at": "2026-02-17T18:58:47.353328"
     },
     {
       "date": "20260221",
@@ -88352,7 +88352,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:54.614061"
+      "fetched_at": "2026-02-17T18:58:48.678610"
     },
     {
       "date": "20260222",
@@ -91181,7 +91181,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:55.936597"
+      "fetched_at": "2026-02-17T18:58:50.050322"
     },
     {
       "date": "20260223",
@@ -93992,7 +93992,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:57.496758"
+      "fetched_at": "2026-02-17T18:58:51.757797"
     },
     {
       "date": "20260224",
@@ -96776,7 +96776,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:51:58.974231"
+      "fetched_at": "2026-02-17T18:58:53.303525"
     },
     {
       "date": "20260225",
@@ -97099,46 +97099,46 @@
               "time": "10:00-11:00",
               "time_from": "10:00",
               "time_to": "11:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "11:00-12:00",
               "time_from": "11:00",
               "time_to": "12:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "12:00-13:00",
               "time_from": "12:00",
               "time_to": "13:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "13:00-14:00",
               "time_from": "13:00",
               "time_to": "14:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "14:00-15:00",
               "time_from": "14:00",
               "time_to": "15:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "16:00-17:00",
@@ -99136,10 +99136,10 @@
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
@@ -99551,7 +99551,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:00.500653"
+      "fetched_at": "2026-02-17T18:58:54.790762"
     },
     {
       "date": "20260226",
@@ -102353,7 +102353,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:01.920953"
+      "fetched_at": "2026-02-17T18:58:56.190296"
     },
     {
       "date": "20260227",
@@ -105146,7 +105146,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:03.490959"
+      "fetched_at": "2026-02-17T18:58:57.776422"
     },
     {
       "date": "20260228",
@@ -107975,7 +107975,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:04.813060"
+      "fetched_at": "2026-02-17T18:58:59.087650"
     },
     {
       "date": "20260301",
@@ -110795,7 +110795,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:06.204284"
+      "fetched_at": "2026-02-17T18:59:00.646394"
     },
     {
       "date": "20260302",
@@ -113615,7 +113615,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:08.201234"
+      "fetched_at": "2026-02-17T18:59:02.260029"
     },
     {
       "date": "20260303",
@@ -116354,7 +116354,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:09.764836"
+      "fetched_at": "2026-02-17T18:59:03.814390"
     },
     {
       "date": "20260304",
@@ -119156,7 +119156,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:12.052777"
+      "fetched_at": "2026-02-17T18:59:05.279669"
     },
     {
       "date": "20260305",
@@ -121940,7 +121940,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:13.472255"
+      "fetched_at": "2026-02-17T18:59:06.724286"
     },
     {
       "date": "20260306",
@@ -124742,7 +124742,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:15.012442"
+      "fetched_at": "2026-02-17T18:59:08.306291"
     },
     {
       "date": "20260307",
@@ -127562,7 +127562,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:16.260530"
+      "fetched_at": "2026-02-17T18:59:09.605841"
     },
     {
       "date": "20260308",
@@ -130391,7 +130391,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:17.563279"
+      "fetched_at": "2026-02-17T18:59:11.021464"
     },
     {
       "date": "20260309",
@@ -133166,7 +133166,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:19.005345"
+      "fetched_at": "2026-02-17T18:59:12.515981"
     },
     {
       "date": "20260310",
@@ -135977,7 +135977,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:20.575661"
+      "fetched_at": "2026-02-17T18:59:14.028219"
     },
     {
       "date": "20260311",
@@ -138779,7 +138779,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:21.922647"
+      "fetched_at": "2026-02-17T18:59:15.615368"
     },
     {
       "date": "20260312",
@@ -141554,7 +141554,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:23.360620"
+      "fetched_at": "2026-02-17T18:59:17.200502"
     },
     {
       "date": "20260313",
@@ -144356,7 +144356,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:25.044418"
+      "fetched_at": "2026-02-17T18:59:18.841047"
     },
     {
       "date": "20260314",
@@ -147185,7 +147185,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:26.347335"
+      "fetched_at": "2026-02-17T18:59:20.238764"
     },
     {
       "date": "20260315",
@@ -150014,7 +150014,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:27.590992"
+      "fetched_at": "2026-02-17T18:59:21.698883"
     },
     {
       "date": "20260316",
@@ -152834,7 +152834,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-02-17T06:52:29.036358"
+      "fetched_at": "2026-02-17T18:59:23.186684"
     }
   ]
 }
