@@ -638,9 +638,9 @@
             "time_range": "10:00-11:00",
             "time_to": "11:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 17,
@@ -840,9 +840,9 @@
             "time_range": "11:00-12:00",
             "time_to": "12:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 17,
@@ -1042,9 +1042,9 @@
             "time_range": "12:00-13:00",
             "time_to": "13:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 17,
@@ -1231,6 +1231,16 @@
           {
             "venue_id": 41,
             "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
+            "time_range": "13:00-14:00",
+            "time_to": "14:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
             "time_range": "13:00-14:00",
             "time_to": "14:00",
             "price": null,
@@ -1633,6 +1643,16 @@
             "reason": null
           },
           {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
+            "time_range": "15:00-16:00",
+            "time_to": "16:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
             "venue_id": 17,
             "venue_name": "Harbachschule - 2-fach Halle",
             "time_range": "15:00-16:00",
@@ -1830,9 +1850,9 @@
             "time_range": "16:00-17:00",
             "time_to": "17:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 17,
@@ -1967,6 +1987,16 @@
           {
             "venue_id": 76,
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
+            "time_range": "16:00-17:00",
+            "time_to": "17:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 86,
+            "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "16:00-17:00",
             "time_to": "17:00",
             "price": null,
@@ -2102,7 +2132,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "blocked",
+            "status": "not_offered",
             "is_available": false,
             "reason": null
           },
@@ -2112,7 +2142,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "blocked",
+            "status": "not_offered",
             "is_available": false,
             "reason": null
           },
@@ -2122,7 +2152,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "blocked",
+            "status": "not_offered",
             "is_available": false,
             "reason": null
           },
@@ -2172,9 +2202,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 50,
@@ -2192,9 +2222,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           }
         ],
         "18:00": [
@@ -2361,6 +2391,16 @@
           {
             "venue_id": 76,
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
+            "time_range": "18:00-19:00",
+            "time_to": "19:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 86,
+            "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
@@ -2758,9 +2798,19 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
+          },
+          {
+            "venue_id": 86,
+            "venue_name": "Robinsonschule - Turnsaal",
+            "time_range": "20:00-21:00",
+            "time_to": "21:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
           },
           {
             "venue_id": 50,
@@ -2768,9 +2818,9 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "unavailable",
+            "status": "not_offered",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 51,
@@ -2870,7 +2920,7 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -2880,7 +2930,7 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -2950,9 +3000,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "unavailable",
+            "status": "blocked",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 86,
@@ -2960,9 +3010,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "unavailable",
+            "status": "blocked",
             "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
+            "reason": null
           },
           {
             "venue_id": 50,
@@ -14247,16 +14297,6 @@
             "reason": null
           },
           {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
             "venue_id": 51,
             "venue_name": "Weberschule - Turnsaal OG",
             "time_range": "17:00-18:00",
@@ -14444,9 +14484,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -14636,9 +14676,9 @@
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -16957,9 +16997,9 @@
             "time_range": "16:00-17:00",
             "time_to": "17:00",
             "price": null,
-            "status": "blocked",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -17139,9 +17179,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -17149,9 +17189,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -17159,7 +17199,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -17169,7 +17209,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -17179,7 +17219,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -17341,9 +17381,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -17351,9 +17391,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -17431,9 +17471,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 50,
@@ -17543,9 +17583,9 @@
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -17553,9 +17593,9 @@
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -17623,9 +17663,9 @@
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 50,
@@ -17735,9 +17775,9 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -17745,9 +17785,9 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -17937,9 +17977,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -17947,9 +17987,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -20176,7 +20216,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -20186,7 +20226,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -20196,7 +20236,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -20246,9 +20286,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 50,
@@ -20448,9 +20488,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -23243,9 +23283,9 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -23435,9 +23475,9 @@
             "time_range": "18:00-19:00",
             "time_to": "19:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -23524,16 +23564,6 @@
           {
             "venue_id": 52,
             "venue_name": "Jahnschule - Gymnastiksaal",
-            "time_range": "19:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
@@ -23637,9 +23667,9 @@
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -23729,9 +23759,9 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -23739,9 +23769,9 @@
             "time_range": "20:00-21:00",
             "time_to": "21:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -23921,9 +23951,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
@@ -23931,9 +23961,9 @@
             "time_range": "21:00-22:00",
             "time_to": "22:00",
             "price": null,
-            "status": "not_offered",
+            "status": "unavailable",
             "is_available": false,
-            "reason": null
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -24675,10 +24705,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "10:00-11:00",
             "time_to": "11:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -24877,10 +24907,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "11:00-12:00",
             "time_to": "12:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -25079,10 +25109,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "12:00-13:00",
             "time_to": "13:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -25281,10 +25311,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "13:00-14:00",
             "time_to": "14:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -25483,10 +25513,10 @@
             "venue_name": "Dornach - Normalhalle",
             "time_range": "14:00-15:00",
             "time_to": "15:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 17,
@@ -26321,10 +26351,10 @@
             "venue_name": "Harbachschule - Gymnastikraum",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 52,
@@ -26421,10 +26451,10 @@
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 86,
@@ -26523,30 +26553,30 @@
             "venue_name": "Harbachschule - Gymnastikraum",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 72,
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -26603,10 +26633,10 @@
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 86,
@@ -26623,10 +26653,10 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -26655,10 +26685,10 @@
             "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 75,
@@ -26705,40 +26735,40 @@
             "venue_name": "Harbachschule - Gymnastikraum",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 52,
             "venue_name": "Jahnschule - Gymnastiksaal",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 72,
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 73,
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 32,
@@ -26755,10 +26785,10 @@
             "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 34,
@@ -26775,20 +26805,20 @@
             "venue_name": "Magdalenaschule - Turnsaal",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 89,
             "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 88,
@@ -26805,20 +26835,20 @@
             "venue_name": "Pöstlingbergschule - Gymnastiksaal",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 86,
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
+            "price": null,
+            "status": "unavailable",
+            "is_available": false,
+            "reason": "<b>Nicht buchbar</b>"
           },
           {
             "venue_id": 51,
@@ -35306,16 +35336,6 @@
             "reason": null
           },
           {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
             "venue_id": 51,
             "venue_name": "Weberschule - Turnsaal OG",
             "time_range": "17:00-18:00",
@@ -35512,9 +35532,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -35714,9 +35734,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38055,9 +38075,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "16:00-17:00",
             "time_to": "17:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38237,9 +38257,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38247,9 +38267,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38258,7 +38278,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -38268,7 +38288,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -38278,7 +38298,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -38439,9 +38459,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38449,9 +38469,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38529,9 +38549,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38641,9 +38661,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38651,9 +38671,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38721,9 +38741,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38833,9 +38853,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -38843,9 +38863,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -39035,9 +39055,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -39045,9 +39065,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -41275,7 +41295,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -41285,7 +41305,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -41295,7 +41315,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -41344,9 +41364,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -41546,9 +41566,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -44341,9 +44361,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -44533,9 +44553,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -44623,16 +44643,6 @@
           {
             "venue_id": 52,
             "venue_name": "Jahnschule - Gymnastiksaal",
-            "time_range": "19:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
@@ -44735,9 +44745,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -44837,9 +44847,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -44847,9 +44857,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -45029,9 +45039,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -45039,9 +45049,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -56395,16 +56405,6 @@
             "reason": null
           },
           {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
             "venue_id": 51,
             "venue_name": "Weberschule - Turnsaal OG",
             "time_range": "17:00-18:00",
@@ -56601,9 +56601,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -56803,9 +56803,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59144,9 +59144,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "16:00-17:00",
             "time_to": "17:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59326,9 +59326,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59336,9 +59336,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59347,7 +59347,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -59357,7 +59357,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -59367,7 +59367,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -59528,9 +59528,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59538,9 +59538,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59618,9 +59618,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59730,9 +59730,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59740,9 +59740,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59810,9 +59810,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59922,9 +59922,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -59932,9 +59932,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -60124,9 +60124,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -60134,9 +60134,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -62364,7 +62364,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -62374,7 +62374,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -62384,7 +62384,7 @@
             "time_range": "17:00-18:00",
             "time_to": "18:00",
             "price": null,
-            "status": "not_offered",
+            "status": "blocked",
             "is_available": false,
             "reason": null
           },
@@ -62433,9 +62433,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -62635,9 +62635,9 @@
             "venue_name": "Robinsonschule - Turnsaal",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "13,00",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -65430,9 +65430,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "17:00-18:00",
             "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -65622,9 +65622,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "18:00-19:00",
             "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -65712,16 +65712,6 @@
           {
             "venue_id": 52,
             "venue_name": "Jahnschule - Gymnastiksaal",
-            "time_range": "19:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
             "price": null,
@@ -65824,9 +65814,9 @@
             "venue_name": "Weberschule - Turnsaal EG",
             "time_range": "19:00-20:00",
             "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -65926,9 +65916,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -65936,9 +65926,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "20:00-21:00",
             "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -66118,9 +66108,9 @@
             "venue_name": "Karlhofschule - Turnsaal links",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -66128,9 +66118,9 @@
             "venue_name": "Karlhofschule - Turnsaal rechts",
             "time_range": "21:00-22:00",
             "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
             "reason": null
           },
           {
@@ -78697,27 +78687,36 @@
               "time_from": "10:00",
               "time_to": "11:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "11:00-12:00",
               "time_from": "11:00",
               "time_to": "12:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "12:00-13:00",
               "time_from": "12:00",
               "time_to": "13:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
+            },
+            {
+              "time": "13:00-14:00",
+              "time_from": "13:00",
+              "time_to": "14:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
             },
             {
               "time": "14:00-15:00",
@@ -78729,13 +78728,22 @@
               "reason": null
             },
             {
+              "time": "15:00-16:00",
+              "time_from": "15:00",
+              "time_to": "16:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
               "time": "16:00-17:00",
               "time_from": "16:00",
               "time_to": "17:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "17:00-18:00",
@@ -79624,7 +79632,7 @@
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             }
@@ -79765,7 +79773,7 @@
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             }
@@ -79870,7 +79878,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "blocked",
+              "status": "not_offered",
               "is_available": false,
               "reason": null
             },
@@ -80011,7 +80019,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "blocked",
+              "status": "not_offered",
               "is_available": false,
               "reason": null
             },
@@ -80152,7 +80160,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "blocked",
+              "status": "not_offered",
               "is_available": false,
               "reason": null
             },
@@ -80743,18 +80751,18 @@
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "unavailable",
+              "status": "blocked",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             }
           ]
         },
@@ -80844,13 +80852,31 @@
               "reason": null
             },
             {
+              "time": "16:00-17:00",
+              "time_from": "16:00",
+              "time_to": "17:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
+            },
+            {
+              "time": "18:00-19:00",
+              "time_from": "18:00",
+              "time_to": "19:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
             },
             {
               "time": "19:00-20:00",
@@ -80862,13 +80888,22 @@
               "reason": null
             },
             {
+              "time": "20:00-21:00",
+              "time_from": "20:00",
+              "time_to": "21:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "unavailable",
+              "status": "blocked",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             }
           ]
         },
@@ -80998,9 +81033,9 @@
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "21:00-22:00",
@@ -81112,9 +81147,9 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "unavailable",
+              "status": "not_offered",
               "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
+              "reason": null
             },
             {
               "time": "18:00-19:00",
@@ -81157,7 +81192,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:51.002655"
+      "fetched_at": "2026-03-05T19:16:42.629215"
     },
     {
       "date": "20260306",
@@ -83959,7 +83994,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:52.651319"
+      "fetched_at": "2026-03-05T19:16:44.321686"
     },
     {
       "date": "20260307",
@@ -86779,7 +86814,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:54.054786"
+      "fetched_at": "2026-03-05T19:16:45.715003"
     },
     {
       "date": "20260308",
@@ -89608,7 +89643,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:55.629671"
+      "fetched_at": "2026-03-05T19:16:47.169490"
     },
     {
       "date": "20260309",
@@ -92193,31 +92228,22 @@
               "reason": null
             },
             {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
@@ -92383,7 +92409,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:57.270581"
+      "fetched_at": "2026-03-05T19:16:48.771515"
     },
     {
       "date": "20260310",
@@ -93607,45 +93633,45 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             }
           ]
         },
@@ -93739,54 +93765,54 @@
               "time_from": "16:00",
               "time_to": "17:00",
               "price": null,
-              "status": "blocked",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             }
           ]
         },
@@ -93889,7 +93915,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -94030,7 +94056,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -94171,7 +94197,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -94876,18 +94902,18 @@
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
@@ -95194,7 +95220,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:42:58.912483"
+      "fetched_at": "2026-03-05T19:16:50.545842"
     },
     {
       "date": "20260311",
@@ -96700,7 +96726,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -96841,7 +96867,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -96982,7 +97008,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -97687,18 +97713,18 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
@@ -97996,7 +98022,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:00.592281"
+      "fetched_at": "2026-03-05T19:16:52.169803"
     },
     {
       "date": "20260312",
@@ -99216,31 +99242,22 @@
               "reason": null
             },
             {
-              "time": "19:00-20:00",
-              "time_from": "19:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             }
           ]
         },
@@ -99370,18 +99387,18 @@
               "time_from": "20:00",
               "time_to": "21:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             }
           ]
         },
@@ -100585,27 +100602,27 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
               "price": null,
-              "status": "not_offered",
+              "status": "unavailable",
               "is_available": false,
-              "reason": null
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
@@ -100771,7 +100788,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:02.207210"
+      "fetched_at": "2026-03-05T19:16:53.680573"
     },
     {
       "date": "20260313",
@@ -101043,10 +101060,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -101094,46 +101111,46 @@
               "time": "10:00-11:00",
               "time_from": "10:00",
               "time_to": "11:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "11:00-12:00",
               "time_from": "11:00",
               "time_to": "12:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "12:00-13:00",
               "time_from": "12:00",
               "time_to": "13:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "13:00-14:00",
               "time_from": "13:00",
               "time_to": "14:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "14:00-15:00",
               "time_from": "14:00",
               "time_to": "15:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "15:00-16:00",
@@ -101721,28 +101738,28 @@
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -101871,10 +101888,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -102003,19 +102020,19 @@
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -102144,19 +102161,19 @@
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -102435,10 +102452,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -102717,10 +102734,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -102849,10 +102866,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -103113,28 +103130,28 @@
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -103272,10 +103289,10 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -103404,10 +103421,10 @@
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
+              "price": null,
+              "status": "unavailable",
+              "is_available": false,
+              "reason": "<b>Nicht buchbar</b>"
             },
             {
               "time": "21:00-22:00",
@@ -103564,7 +103581,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:04.041316"
+      "fetched_at": "2026-03-05T19:16:55.323362"
     },
     {
       "date": "20260314",
@@ -106393,7 +106410,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:05.586658"
+      "fetched_at": "2026-03-05T19:16:56.664060"
     },
     {
       "date": "20260315",
@@ -109222,7 +109239,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:07.070145"
+      "fetched_at": "2026-03-05T19:16:58.032184"
     },
     {
       "date": "20260316",
@@ -111852,30 +111869,21 @@
               "reason": null
             },
             {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -112042,7 +112050,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:08.610442"
+      "fetched_at": "2026-03-05T19:17:01.479776"
     },
     {
       "date": "20260317",
@@ -113265,45 +113273,45 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -113397,54 +113405,54 @@
               "time": "16:00-17:00",
               "time_from": "16:00",
               "time_to": "17:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -113548,7 +113556,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -113689,7 +113697,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -113830,7 +113838,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -114534,18 +114542,18 @@
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -114853,7 +114861,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:10.240260"
+      "fetched_at": "2026-03-05T19:17:03.123184"
     },
     {
       "date": "20260318",
@@ -116359,7 +116367,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -116500,7 +116508,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -116641,7 +116649,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -117345,18 +117353,18 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -117655,7 +117663,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:11.727510"
+      "fetched_at": "2026-03-05T19:17:04.676166"
     },
     {
       "date": "20260319",
@@ -118884,30 +118892,21 @@
               "reason": null
             },
             {
-              "time": "19:00-20:00",
-              "time_from": "19:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -119037,18 +119036,18 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -120252,27 +120251,27 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -120439,7 +120438,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:13.558315"
+      "fetched_at": "2026-03-05T19:17:06.335314"
     },
     {
       "date": "20260320",
@@ -123241,7 +123240,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:15.243242"
+      "fetched_at": "2026-03-05T19:17:07.973858"
     },
     {
       "date": "20260321",
@@ -126061,7 +126060,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:16.832224"
+      "fetched_at": "2026-03-05T19:17:09.317155"
     },
     {
       "date": "20260322",
@@ -128872,7 +128871,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:18.286864"
+      "fetched_at": "2026-03-05T19:17:10.642798"
     },
     {
       "date": "20260323",
@@ -131502,30 +131501,21 @@
               "reason": null
             },
             {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -131692,7 +131682,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:19.877939"
+      "fetched_at": "2026-03-05T19:17:12.145090"
     },
     {
       "date": "20260324",
@@ -132915,45 +132905,45 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -133047,54 +133037,54 @@
               "time": "16:00-17:00",
               "time_from": "16:00",
               "time_to": "17:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -133198,7 +133188,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -133339,7 +133329,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -133480,7 +133470,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -134184,18 +134174,18 @@
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -134503,7 +134493,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:21.452097"
+      "fetched_at": "2026-03-05T19:17:13.817929"
     },
     {
       "date": "20260325",
@@ -136009,7 +135999,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -136150,7 +136140,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -136291,7 +136281,7 @@
               "time_from": "17:00",
               "time_to": "18:00",
               "price": null,
-              "status": "not_offered",
+              "status": "blocked",
               "is_available": false,
               "reason": null
             },
@@ -136995,18 +136985,18 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "13,00",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -137305,7 +137295,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:23.017142"
+      "fetched_at": "2026-03-05T19:17:15.314845"
     },
     {
       "date": "20260326",
@@ -138534,30 +138524,21 @@
               "reason": null
             },
             {
-              "time": "19:00-20:00",
-              "time_from": "19:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -138687,18 +138668,18 @@
               "time": "20:00-21:00",
               "time_from": "20:00",
               "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "21:00-22:00",
               "time_from": "21:00",
               "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             }
           ]
@@ -139902,27 +139883,27 @@
               "time": "17:00-18:00",
               "time_from": "17:00",
               "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "18:00-19:00",
               "time_from": "18:00",
               "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
               "time": "19:00-20:00",
               "time_from": "19:00",
               "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
               "reason": null
             },
             {
@@ -140089,7 +140070,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:24.656373"
+      "fetched_at": "2026-03-05T19:17:16.942443"
     },
     {
       "date": "20260327",
@@ -142891,7 +142872,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:26.401053"
+      "fetched_at": "2026-03-05T19:17:18.589648"
     },
     {
       "date": "20260328",
@@ -144199,7 +144180,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:27.889337"
+      "fetched_at": "2026-03-05T19:17:19.886667"
     },
     {
       "date": "20260329",
@@ -145507,7 +145488,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:29.195347"
+      "fetched_at": "2026-03-05T19:17:21.365550"
     },
     {
       "date": "20260330",
@@ -147526,7 +147507,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:30.555065"
+      "fetched_at": "2026-03-05T19:17:22.662819"
     },
     {
       "date": "20260331",
@@ -149527,7 +149508,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:31.985456"
+      "fetched_at": "2026-03-05T19:17:23.953263"
     },
     {
       "date": "20260401",
@@ -151537,7 +151518,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-03-05T06:43:33.453353"
+      "fetched_at": "2026-03-05T19:17:25.297878"
     }
   ]
 }
