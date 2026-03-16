@@ -214,8 +214,16 @@
         .calendar-row {
             display: grid;
             grid-template-columns: 120px repeat(60, minmax(8px, 1fr));
+            grid-auto-flow: dense;
             border-bottom: 1px solid #e0e0e0;
             align-items: start;
+            max-height: 46px;
+            overflow: hidden;
+        }
+
+        .calendar-row.expanded {
+            max-height: none;
+            overflow: visible;
         }
 
         .calendar-row:nth-child(even) {
@@ -235,8 +243,20 @@
             align-self: stretch;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 36px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .day-cell:hover {
+            background: #e8f4fd;
+        }
+
+        .expand-hint {
+            font-size: 9px;
+            color: #aaa;
+            margin-left: 3px;
         }
 
         .day-cell .day-name {
@@ -805,9 +825,11 @@
             headerRow.className = 'calendar-header';
             
             // Day label header
+            // Header "Day" cell — doubles as expand/collapse all toggle
             const emptyHeader = document.createElement('div');
             emptyHeader.className = 'calendar-header-cell day-header';
-            emptyHeader.textContent = 'Day';
+            emptyHeader.style.cursor = 'pointer';
+            emptyHeader.style.userSelect = 'none';
             headerRow.appendChild(emptyHeader);
 
             // Hour labels — each spans 4 × 15-min columns
@@ -820,22 +842,45 @@
                 cell.textContent = `${h}:00`;
                 headerRow.appendChild(cell);
             }
-            
+
             calendar.appendChild(headerRow);
-            
+
+            function updateToggleAll() {
+                const rows = calendar.querySelectorAll('.calendar-row');
+                const anyExpanded = [...rows].some(r => r.classList.contains('expanded'));
+                emptyHeader.textContent = anyExpanded ? 'Collapse All ▲' : 'Expand All ▼';
+            }
+
+            emptyHeader.addEventListener('click', () => {
+                const rows = calendar.querySelectorAll('.calendar-row');
+                const anyExpanded = [...rows].some(r => r.classList.contains('expanded'));
+                rows.forEach(r => {
+                    r.classList.toggle('expanded', !anyExpanded);
+                    const hint = r.querySelector('.expand-hint');
+                    if (hint) hint.textContent = anyExpanded ? '▼' : '▲';
+                });
+                updateToggleAll();
+            });
+
             // Day rows
             currentData.sorted_dates.forEach(date => {
                 const dayData = currentData.calendar_grid[date];
                 const row = document.createElement('div');
-                row.className = 'calendar-row';
-                
+                row.className = 'calendar-row'; // start collapsed
+
                 // Day label cell — sticky left, spans all auto-rows via CSS
                 const dayCell = document.createElement('div');
                 dayCell.className = 'day-cell';
                 dayCell.innerHTML = `
-                    <div class="day-name">${dayData.day_name}</div>
+                    <div class="day-name">${dayData.day_name}<span class="expand-hint">▼</span></div>
                     <div class="day-date">${dayData.day_of_week}</div>
                 `;
+                dayCell.addEventListener('click', () => {
+                    row.classList.toggle('expanded');
+                    dayCell.querySelector('.expand-hint').textContent =
+                        row.classList.contains('expanded') ? '▲' : '▼';
+                    updateToggleAll();
+                });
                 row.appendChild(dayCell);
 
                 // Place each venue chip directly in the grid with correct column span
@@ -848,10 +893,13 @@
                         row.appendChild(slot);
                     });
                 });
-                
+
                 calendar.appendChild(row);
             });
-            
+
+            // Set initial header text (all expanded)
+            updateToggleAll();
+
             calendarWrapper.appendChild(calendar);
             content.appendChild(calendarWrapper);
             
