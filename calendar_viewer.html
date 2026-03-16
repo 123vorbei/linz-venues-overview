@@ -447,6 +447,17 @@
                 West
             </label>
         </div>
+        <div id="nameFilters" class="filters" style="display: none;">
+            <strong>Name:</strong>
+            <label style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                <span style="font-size: 12px; color: #666;">Show only (regex)</span>
+                <input type="text" id="filterInclude" placeholder="e.g. Turnsaal" oninput="applyFilters()" style="padding: 5px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 180px;">
+            </label>
+            <label style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                <span style="font-size: 12px; color: #666;">Exclude (regex)</span>
+                <input type="text" id="filterExclude" placeholder="e.g. Gymnastik" oninput="applyFilters()" style="padding: 5px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 180px;">
+            </label>
+        </div>
         
         <div id="summary" class="summary" style="display: none;">
             <div class="summary-item">
@@ -740,6 +751,7 @@
             
             // Show filters
             document.getElementById('filters').style.display = 'flex';
+            document.getElementById('nameFilters').style.display = 'flex';
             document.getElementById('regionFilters').style.display = 'flex';
             
             // Update summary
@@ -831,6 +843,10 @@
         }
         
         function initializeFilters() {
+            // Default name filters
+            document.getElementById('filterInclude').value = '';
+            document.getElementById('filterExclude').value = 'Gymnastik';
+
             // Default filter state: show only available
             document.getElementById('filterAvailable').checked = true;
             document.getElementById('filterUnavailable').checked = false;
@@ -863,6 +879,20 @@
             const showBlocked = document.getElementById('filterBlocked').checked;
             const showNotOffered = document.getElementById('filterNotOffered').checked;
 
+            const includeInput = document.getElementById('filterInclude');
+            const excludeInput = document.getElementById('filterExclude');
+            let includeRe = null, excludeRe = null;
+            try {
+                const v = includeInput.value.trim();
+                includeRe = v ? new RegExp(v, 'i') : null;
+                includeInput.style.borderColor = '';
+            } catch(e) { includeInput.style.borderColor = '#e53935'; }
+            try {
+                const v = excludeInput.value.trim();
+                excludeRe = v ? new RegExp(v, 'i') : null;
+                excludeInput.style.borderColor = '';
+            } catch(e) { excludeInput.style.borderColor = '#e53935'; }
+
             const activeRegions = new Set(
                 ['Nord', 'Ost', 'Süd', 'West']
                     .filter(r => {
@@ -880,13 +910,16 @@
                                slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
 
                 const region = slot.dataset.region;
+                const name = slot.dataset.venueName || '';
                 const statusOk = (status === 'available' && showAvailable) ||
                                  (status === 'unavailable' && showUnavailable) ||
                                  (status === 'blocked' && showBlocked) ||
                                  (status === 'not_offered' && showNotOffered);
                 const regionOk = !hasRegionFilter || !region || activeRegions.has(region);
+                const nameOk = (!includeRe || includeRe.test(name)) &&
+                               (!excludeRe || !excludeRe.test(name));
 
-                if (statusOk && regionOk) {
+                if (statusOk && regionOk && nameOk) {
                     slot.classList.remove('filtered-out');
                 } else {
                     slot.classList.add('filtered-out');
@@ -902,6 +935,7 @@
             const status = venue.status || 'available';
             slot.classList.add(status);
             if (venue.region) slot.dataset.region = venue.region;
+            slot.dataset.venueName = venue.venue_name;
             
             const name = document.createElement('div');
             name.className = 'venue-slot-name';
