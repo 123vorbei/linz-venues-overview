@@ -14,6 +14,22 @@ from typing import List, Dict
 import time
 import re
 
+# ============================================================
+# REGION CONFIGURATION
+# cluster_id maps to geographical regions in Linz.
+# Edit ACTIVE_REGIONS to choose which regions are scraped.
+# ============================================================
+REGIONS = {
+    6: 'Nord',
+    5: 'Ost',
+    1: 'Süd',
+    7: 'West',
+}
+ACTIVE_REGIONS = [6, 5, 7]  # Default: Linz-Nord only
+# ACTIVE_REGIONS = [6, 5, 1, 7]  # Scrape all four regions
+# ============================================================
+
+
 class VenueCalendarAggregator:
     def __init__(self, base_url="https://book.venuzle.at/stadt-linz/venues"):
         self.base_url = base_url
@@ -26,20 +42,21 @@ class VenueCalendarAggregator:
         """
         Fetch availability for ALL venues on a specific date using AJAX endpoint
         date format: YYYYMMDD (e.g., 20260209)
-        cluster_id: venue cluster (default 6 seems to be all venues)
+        cluster_id: region id (see REGIONS dict at top of file)
         """
         url = f"{self.base_url}/c/{cluster_id}/{date}/ajax/"
-        
+        region_name = REGIONS.get(cluster_id, str(cluster_id))
+
         try:
-            print(f"  Fetching {url}...")
+            print(f"  Fetching {url} [{region_name}]...")
             response = self.session.get(url, timeout=10)
             response.raise_for_status()
-            
+
             # The response is HTML table rows for all venues
             soup = BeautifulSoup(response.content, 'html.parser')
-            
+
             # Extract all venue rows
-            venues_data = self._extract_venues_from_ajax(soup, date)
+            venues_data = self._extract_venues_from_ajax(soup, date, region_name)
             
             # Debug info
             all_rows = soup.find_all('tr')
@@ -48,21 +65,23 @@ class VenueCalendarAggregator:
             return {
                 'date': date,
                 'url': url,
+                'region': region_name,
                 'venues': venues_data,
                 'total_venues': len(all_rows),
                 'venues_with_slots': len(venues_data),
                 'fetched_at': datetime.now().isoformat()
             }
-        
+
         except Exception as e:
-            print(f"  Error fetching date {date}: {e}")
+            print(f"  Error fetching date {date} [{region_name}]: {e}")
             return {
                 'date': date,
+                'region': region_name,
                 'error': str(e),
                 'venues': []
             }
     
-    def _extract_venues_from_ajax(self, soup: BeautifulSoup, date: str) -> List[Dict]:
+    def _extract_venues_from_ajax(self, soup: BeautifulSoup, date: str, region_name: str = None) -> List[Dict]:
         """
         Extract all venues and their availability from AJAX response
         Each <tr> represents one venue
@@ -112,6 +131,7 @@ class VenueCalendarAggregator:
             venues.append({
                 'venue_id': venue_id,
                 'venue_name': venue_name,
+                'region': region_name,
                 'available_slots': time_slots
             })
         
@@ -205,28 +225,30 @@ class VenueCalendarAggregator:
         
         return slots
     
-    def get_week_availability(self, start_date: str, days: int = 7, cluster_id: int = 6) -> Dict:
+    def get_week_availability(self, start_date: str, days: int = 7, active_regions: List[int] = None) -> Dict:
         """
-        Fetch availability for multiple days
+        Fetch availability for multiple days across one or more regions.
         start_date: YYYYMMDD format
         days: number of days to fetch
+        active_regions: list of cluster/region IDs to fetch (see REGIONS at top of file)
         """
+        if active_regions is None:
+            active_regions = [6]
+
         all_days_data = []
-        
-        # Parse start date
         date_obj = datetime.strptime(start_date, "%Y%m%d")
-        
-        print(f"Fetching {days} days starting from {start_date}...")
-        
-        for day_offset in range(days):
-            current_date = date_obj + timedelta(days=day_offset)
-            date_str = current_date.strftime("%Y%m%d")
-            
-            day_data = self.get_day_availability(date_str, cluster_id)
-            all_days_data.append(day_data)
-            
-            time.sleep(0.1)  # Be polite to the server
-        
+        region_names = [REGIONS.get(r, str(r)) for r in active_regions]
+
+        print(f"Fetching {days} days starting from {start_date} for region(s): {', '.join(region_names)}...")
+
+        for cluster_id in active_regions:
+            for day_offset in range(days):
+                current_date = date_obj + timedelta(days=day_offset)
+                date_str = current_date.strftime("%Y%m%d")
+                day_data = self.get_day_availability(date_str, cluster_id)
+                all_days_data.append(day_data)
+                time.sleep(0.1)  # Be polite to the server
+
         return self._process_week_data(all_days_data)
     
     def _process_week_data(self, all_days_data: List[Dict]) -> Dict:
@@ -241,29 +263,30 @@ class VenueCalendarAggregator:
         for day_data in all_days_data:
             if 'error' in day_data:
                 continue
-            
+
             date = day_data['date']
-            
-            # Parse date to get day name
-            date_obj = datetime.strptime(date, "%Y%m%d")
-            day_name = date_obj.strftime("%a %d.%m")  # e.g., "Mon 09.02"
-            
-            calendar_grid[date] = {
-                'day_name': day_name,
-                'day_of_week': date_obj.strftime("%A"),
-                'date_formatted': date_obj.strftime("%d.%m.%Y"),
-                'slots_by_time': defaultdict(list)
-            }
-            
-            # Process each venue's slots
+
+            # Parse date to get day name (only needed on first encounter)
+            if date not in calendar_grid:
+                date_obj = datetime.strptime(date, "%Y%m%d")
+                day_name = date_obj.strftime("%a %d.%m")  # e.g., "Mon 09.02"
+                calendar_grid[date] = {
+                    'day_name': day_name,
+                    'day_of_week': date_obj.strftime("%A"),
+                    'date_formatted': date_obj.strftime("%d.%m.%Y"),
+                    'slots_by_time': defaultdict(list)
+                }
+
+            # Process each venue's slots (merge across regions for the same date)
             for venue in day_data.get('venues', []):
                 for slot in venue['available_slots']:
                     time_key = slot['time_from']
                     all_times.add(time_key)
-                    
+
                     calendar_grid[date]['slots_by_time'][time_key].append({
                         'venue_id': venue['venue_id'],
                         'venue_name': venue['venue_name'],
+                        'region': venue.get('region'),
                         'time_range': slot['time'],
                         'time_to': slot['time_to'],
                         'price': slot['price'],
@@ -305,11 +328,11 @@ def main():
     """
     aggregator = VenueCalendarAggregator()
     
-    # Fetch a week of availability starting from a specific date
-    start_date = datetime.now().strftime("%Y%m%d")  # Format: YYYYMMDD (today's date)
+    # Fetch starting 8 days from today (earlier bookings are not allowed)
+    start_date = datetime.now() + timedelta(days=8)
+    start_date = start_date.strftime("%Y%m%d")  # Format: YYYYMMDD (today's date)
     
-    # Get 28 days (two weeks)
-    results = aggregator.get_week_availability(start_date, days=28)
+    results = aggregator.get_week_availability(start_date, days=20, active_regions=ACTIVE_REGIONS)
     
     # Save to file
     aggregator.save_results(results)

@@ -428,6 +428,25 @@
                 Not Offered
             </label>
         </div>
+        <div id="regionFilters" class="filters" style="display: none;">
+            <strong>Region:</strong>
+            <label>
+                <input type="checkbox" id="filterRegionNord" onchange="applyFilters()">
+                Nord
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionOst" onchange="applyFilters()">
+                Ost
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionSüd" onchange="applyFilters()">
+                Süd
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionWest" onchange="applyFilters()">
+                West
+            </label>
+        </div>
         
         <div id="summary" class="summary" style="display: none;">
             <div class="summary-item">
@@ -721,6 +740,7 @@
             
             // Show filters
             document.getElementById('filters').style.display = 'flex';
+            document.getElementById('regionFilters').style.display = 'flex';
             
             // Update summary
             document.getElementById('summary').style.display = 'grid';
@@ -811,21 +831,29 @@
         }
         
         function initializeFilters() {
-            // Default filter state: show only available + unavailable
-            const defaultFilters = {
-                filterAvailable: true,
-                filterUnavailable: true,
-                filterBlocked: false,
-                filterNotOffered: false
-            };
-            
-            // Apply default filters
-            document.getElementById('filterAvailable').checked = defaultFilters.filterAvailable;
-            document.getElementById('filterUnavailable').checked = defaultFilters.filterUnavailable;
-            document.getElementById('filterBlocked').checked = defaultFilters.filterBlocked;
-            document.getElementById('filterNotOffered').checked = defaultFilters.filterNotOffered;
-            
-            // Apply the filters immediately
+            // Default filter state: show only available
+            document.getElementById('filterAvailable').checked = true;
+            document.getElementById('filterUnavailable').checked = false;
+            document.getElementById('filterBlocked').checked = false;
+            document.getElementById('filterNotOffered').checked = false;
+
+            // Detect which regions are present in the data
+            const presentRegions = new Set();
+            currentData.sorted_dates.forEach(date => {
+                const dayData = currentData.calendar_grid[date];
+                Object.values(dayData.slots_by_time).forEach(venues => {
+                    venues.forEach(v => { if (v.region) presentRegions.add(v.region); });
+                });
+            });
+
+            // Show/hide region checkboxes based on what's in the data; default Nord checked
+            ['Nord', 'Ost', 'Süd', 'West'].forEach(r => {
+                const el = document.getElementById('filterRegion' + r);
+                const label = el ? el.closest('label') : null;
+                if (label) label.style.display = presentRegions.has(r) ? '' : 'none';
+                if (el) el.checked = (r === 'Nord');
+            });
+
             applyFilters();
         }
         
@@ -834,24 +862,31 @@
             const showUnavailable = document.getElementById('filterUnavailable').checked;
             const showBlocked = document.getElementById('filterBlocked').checked;
             const showNotOffered = document.getElementById('filterNotOffered').checked;
-            
-            // Get all venue slots
-            const slots = document.querySelectorAll('.venue-slot');
-            
-            slots.forEach(slot => {
+
+            const activeRegions = new Set(
+                ['Nord', 'Ost', 'Süd', 'West']
+                    .filter(r => {
+                        const el = document.getElementById('filterRegion' + r);
+                        return el && el.checked;
+                    })
+            );
+            // If no region checkbox exists/is visible, don't filter by region
+            const hasRegionFilter = activeRegions.size > 0;
+
+            document.querySelectorAll('.venue-slot').forEach(slot => {
                 const status = slot.classList.contains('available') ? 'available' :
-                              slot.classList.contains('unavailable') ? 'unavailable' :
-                              slot.classList.contains('blocked') ? 'blocked' :
-                              slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
-                
-                let shouldShow = false;
-                
-                if (status === 'available' && showAvailable) shouldShow = true;
-                if (status === 'unavailable' && showUnavailable) shouldShow = true;
-                if (status === 'blocked' && showBlocked) shouldShow = true;
-                if (status === 'not_offered' && showNotOffered) shouldShow = true;
-                
-                if (shouldShow) {
+                               slot.classList.contains('unavailable') ? 'unavailable' :
+                               slot.classList.contains('blocked') ? 'blocked' :
+                               slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
+
+                const region = slot.dataset.region;
+                const statusOk = (status === 'available' && showAvailable) ||
+                                 (status === 'unavailable' && showUnavailable) ||
+                                 (status === 'blocked' && showBlocked) ||
+                                 (status === 'not_offered' && showNotOffered);
+                const regionOk = !hasRegionFilter || !region || activeRegions.has(region);
+
+                if (statusOk && regionOk) {
                     slot.classList.remove('filtered-out');
                 } else {
                     slot.classList.add('filtered-out');
@@ -863,9 +898,10 @@
             const slot = document.createElement('div');
             slot.className = 'venue-slot';
             
-            // Add status class
+            // Add status class and region
             const status = venue.status || 'available';
             slot.classList.add(status);
+            if (venue.region) slot.dataset.region = venue.region;
             
             const name = document.createElement('div');
             name.className = 'venue-slot-name';
