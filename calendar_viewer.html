@@ -174,74 +174,77 @@
             max-height: 65vh;
         }
         
+        /* Gantt timeline layout — 120px day label + 60 × 15-min columns (07:00–22:00) */
         .calendar {
-            display: table;
-            border-collapse: collapse;
-            min-width: 100%;
+            display: block;
+            min-width: 600px;
             background: white;
-            table-layout: auto;
         }
-        
+
         .calendar-header {
-            display: table-row;
+            display: grid;
+            grid-template-columns: 120px repeat(60, minmax(8px, 1fr));
             background: #f5f5f5;
-        }
-        
-        .calendar-header-cell {
-            display: table-cell;
-            padding: 12px 8px;
-            font-weight: 600;
-            border: 1px solid #e0e0e0;
-            text-align: center;
             position: sticky;
             top: 0;
-            background: #f5f5f5;
             z-index: 10;
-            min-width: 70px;
-            width: 70px;
+            border-bottom: 2px solid #bdbdbd;
         }
-        
-        .calendar-header-cell.day-header {
-            min-width: 120px;
-            width: 120px;
+
+        .calendar-header-cell {
+            padding: 6px 2px;
+            font-weight: 600;
+            font-size: 11px;
             text-align: left;
+            border-right: 1px solid #e0e0e0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .calendar-header-cell.day-header {
+            padding: 6px 8px;
+            font-size: 13px;
             position: sticky;
             left: 0;
             z-index: 11;
             background: #e3f2fd;
+            border-right: 2px solid #bdbdbd;
         }
-        
+
         .calendar-row {
-            display: table-row;
+            display: grid;
+            grid-template-columns: 120px repeat(60, minmax(8px, 1fr));
+            border-bottom: 1px solid #e0e0e0;
+            align-items: start;
         }
-        
-        .calendar-cell {
-            display: table-cell;
-            border: 1px solid #e0e0e0;
-            padding: 4px;
-            vertical-align: top;
-            min-height: 60px;
-            position: relative;
-            min-width: 70px;
-            width: 70px;
+
+        .calendar-row:nth-child(even) {
+            background: #fafafa;
         }
-        
-        .calendar-cell.day-cell {
+
+        .day-cell {
+            grid-column: 1;
+            grid-row: 1 / span 100;
             position: sticky;
             left: 0;
-            background: #fafafa;
+            background: inherit;
             font-weight: 500;
             z-index: 5;
-            min-width: 120px;
-            width: 120px;
+            padding: 6px 8px;
+            border-right: 2px solid #bdbdbd;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 36px;
         }
-        
-        .calendar-cell.day-cell .day-name {
+
+        .day-cell .day-name {
             font-size: 14px;
             color: #333;
         }
-        
-        .calendar-cell.day-cell .day-date {
+
+        .day-cell .day-date {
             font-size: 12px;
             color: #666;
             margin-top: 2px;
@@ -249,13 +252,16 @@
         
         .venue-slot {
             color: white;
-            padding: 6px 8px;
-            margin: 2px 0;
+            padding: 4px 6px;
+            margin: 2px;
             border-radius: 4px;
             font-size: 11px;
             cursor: pointer;
             transition: all 0.2s;
             box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            min-width: 0;
+            overflow: hidden;
+            align-self: start;
         }
         
         .venue-slot.available {
@@ -531,6 +537,18 @@
     <script>
         let currentData = null;
         let tooltip = document.getElementById('tooltip');
+
+        // Gantt timeline constants: 07:00–22:00 in 15-min steps = 60 columns
+        const GANTT_START_MIN = 7 * 60;
+        const GANTT_END_MIN   = 22 * 60;
+        const GANTT_STEP_MIN  = 15;
+        const GANTT_COLS      = (GANTT_END_MIN - GANTT_START_MIN) / GANTT_STEP_MIN; // 60
+
+        function timeToGanttCol(timeStr) {
+            const [h, m] = timeStr.split(':').map(Number);
+            const minutes = Math.max(GANTT_START_MIN, Math.min(GANTT_END_MIN, h * 60 + m));
+            return Math.round((minutes - GANTT_START_MIN) / GANTT_STEP_MIN) + 2; // +2: 1-based + day col
+        }
         
         // File input handler - used by browse button
         document.getElementById('jsonFileInput').addEventListener('change', function(e) {
@@ -786,19 +804,22 @@
             const headerRow = document.createElement('div');
             headerRow.className = 'calendar-header';
             
-            // Empty cell for day column
+            // Day label header
             const emptyHeader = document.createElement('div');
             emptyHeader.className = 'calendar-header-cell day-header';
             emptyHeader.textContent = 'Day';
             headerRow.appendChild(emptyHeader);
-            
-            // Time headers
-            currentData.sorted_times.forEach(time => {
-                const timeHeader = document.createElement('div');
-                timeHeader.className = 'calendar-header-cell';
-                timeHeader.textContent = time;
-                headerRow.appendChild(timeHeader);
-            });
+
+            // Hour labels — each spans 4 × 15-min columns
+            const colsPerHour = 60 / GANTT_STEP_MIN;
+            for (let h = GANTT_START_MIN / 60; h < GANTT_END_MIN / 60; h++) {
+                const colStart = (h * 60 - GANTT_START_MIN) / GANTT_STEP_MIN + 2;
+                const cell = document.createElement('div');
+                cell.className = 'calendar-header-cell';
+                cell.style.gridColumn = `${colStart} / span ${colsPerHour}`;
+                cell.textContent = `${h}:00`;
+                headerRow.appendChild(cell);
+            }
             
             calendar.appendChild(headerRow);
             
@@ -808,28 +829,24 @@
                 const row = document.createElement('div');
                 row.className = 'calendar-row';
                 
-                // Day cell
+                // Day label cell — sticky left, spans all auto-rows via CSS
                 const dayCell = document.createElement('div');
-                dayCell.className = 'calendar-cell day-cell';
+                dayCell.className = 'day-cell';
                 dayCell.innerHTML = `
                     <div class="day-name">${dayData.day_name}</div>
                     <div class="day-date">${dayData.day_of_week}</div>
                 `;
                 row.appendChild(dayCell);
-                
-                // Time slot cells
-                currentData.sorted_times.forEach(time => {
-                    const cell = document.createElement('div');
-                    cell.className = 'calendar-cell';
-                    
-                    const venues = dayData.slots_by_time[time] || [];
-                    
+
+                // Place each venue chip directly in the grid with correct column span
+                Object.entries(dayData.slots_by_time).forEach(([timeFrom, venues]) => {
+                    const startCol = timeToGanttCol(timeFrom);
                     venues.forEach(venue => {
+                        const endCol = timeToGanttCol(venue.time_to);
                         const slot = createVenueSlot(venue, date);
-                        cell.appendChild(slot);
+                        slot.style.gridColumn = `${startCol} / ${Math.max(startCol + 1, endCol)}`;
+                        row.appendChild(slot);
                     });
-                    
-                    row.appendChild(cell);
                 });
                 
                 calendar.appendChild(row);
