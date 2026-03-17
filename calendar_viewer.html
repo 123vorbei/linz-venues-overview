@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue Calendar - Stadt Linz</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="archive" content="noarchive">
+    <title>Venue Calendar - Linz</title>
     <style>
         * {
             margin: 0;
@@ -171,74 +174,97 @@
             max-height: 65vh;
         }
         
+        /* Gantt timeline layout — 120px day label + 60 × 15-min columns (07:00–22:00) */
         .calendar {
-            display: table;
-            border-collapse: collapse;
-            min-width: 100%;
+            display: block;
+            min-width: 600px;
             background: white;
-            table-layout: auto;
         }
-        
+
         .calendar-header {
-            display: table-row;
+            display: grid;
+            grid-template-columns: 120px repeat(60, minmax(8px, 1fr));
             background: #f5f5f5;
-        }
-        
-        .calendar-header-cell {
-            display: table-cell;
-            padding: 12px 8px;
-            font-weight: 600;
-            border: 1px solid #e0e0e0;
-            text-align: center;
             position: sticky;
             top: 0;
-            background: #f5f5f5;
             z-index: 10;
-            min-width: 70px;
-            width: 70px;
+            border-bottom: 2px solid #bdbdbd;
         }
-        
-        .calendar-header-cell.day-header {
-            min-width: 120px;
-            width: 120px;
+
+        .calendar-header-cell {
+            padding: 6px 2px;
+            font-weight: 600;
+            font-size: 11px;
             text-align: left;
+            border-right: 1px solid #e0e0e0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .calendar-header-cell.day-header {
+            padding: 6px 8px;
+            font-size: 13px;
             position: sticky;
             left: 0;
             z-index: 11;
             background: #e3f2fd;
+            border-right: 2px solid #bdbdbd;
         }
-        
+
         .calendar-row {
-            display: table-row;
+            display: grid;
+            grid-template-columns: 120px repeat(60, minmax(8px, 1fr));
+            grid-auto-flow: dense;
+            border-bottom: 1px solid #e0e0e0;
+            align-items: start;
+            max-height: 46px;
+            overflow: hidden;
         }
-        
-        .calendar-cell {
-            display: table-cell;
-            border: 1px solid #e0e0e0;
-            padding: 4px;
-            vertical-align: top;
-            min-height: 60px;
-            position: relative;
-            min-width: 70px;
-            width: 70px;
+
+        .calendar-row.expanded {
+            max-height: none;
+            overflow: visible;
         }
-        
-        .calendar-cell.day-cell {
+
+        .calendar-row:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .day-cell {
+            grid-column: 1;
+            grid-row: 1 / span 100;
             position: sticky;
             left: 0;
-            background: #fafafa;
+            background: inherit;
             font-weight: 500;
             z-index: 5;
-            min-width: 120px;
-            width: 120px;
+            padding: 6px 8px;
+            border-right: 2px solid #bdbdbd;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 36px;
+            cursor: pointer;
+            user-select: none;
         }
-        
-        .calendar-cell.day-cell .day-name {
+
+        .day-cell:hover {
+            background: #e8f4fd;
+        }
+
+        .expand-hint {
+            font-size: 9px;
+            color: #aaa;
+            margin-left: 3px;
+        }
+
+        .day-cell .day-name {
             font-size: 14px;
             color: #333;
         }
-        
-        .calendar-cell.day-cell .day-date {
+
+        .day-cell .day-date {
             font-size: 12px;
             color: #666;
             margin-top: 2px;
@@ -246,13 +272,16 @@
         
         .venue-slot {
             color: white;
-            padding: 6px 8px;
-            margin: 2px 0;
+            padding: 4px 6px;
+            margin: 2px;
             border-radius: 4px;
             font-size: 11px;
             cursor: pointer;
             transition: all 0.2s;
             box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            min-width: 0;
+            overflow: hidden;
+            align-self: start;
         }
         
         .venue-slot.available {
@@ -351,11 +380,41 @@
             margin-right: 5px;
             vertical-align: middle;
         }
+
+        .impressum {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border-top: 2px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .impressum h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .impressum p {
+            margin: 4px 0;
+            line-height: 1.6;
+        }
+
+        .impressum a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .impressum a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📅 Stadt Linz Venue Calendar</h1>
+        <h1>📅 Linz Venue Calendar</h1>
         
         <div class="controls">
             <div class="split-button-group">
@@ -393,6 +452,36 @@
                 <input type="checkbox" id="filterNotOffered" onchange="applyFilters()">
                 <span class="legend-color" style="background: #e0e0e0; vertical-align: middle;"></span>
                 Not Offered
+            </label>
+        </div>
+        <div id="regionFilters" class="filters" style="display: none;">
+            <strong>Region:</strong>
+            <label>
+                <input type="checkbox" id="filterRegionNord" onchange="applyFilters()">
+                Nord
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionOst" onchange="applyFilters()">
+                Ost
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionSüd" onchange="applyFilters()">
+                Süd
+            </label>
+            <label>
+                <input type="checkbox" id="filterRegionWest" onchange="applyFilters()">
+                West
+            </label>
+        </div>
+        <div id="nameFilters" class="filters" style="display: none;">
+            <strong>Name:</strong>
+            <label style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                <span style="font-size: 12px; color: #666;">Show only (regex)</span>
+                <input type="text" id="filterInclude" placeholder="e.g. Turnsaal" oninput="applyFilters()" style="padding: 5px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 180px;">
+            </label>
+            <label style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                <span style="font-size: 12px; color: #666;">Exclude (regex)</span>
+                <input type="text" id="filterExclude" placeholder="e.g. Gymnastik" oninput="applyFilters()" style="padding: 5px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 180px;">
             </label>
         </div>
         
@@ -448,13 +537,38 @@
                 🕐 Horizontal = Time of day | 📅 Vertical = Day of week
             </div>
         </div>
+
+        <div class="impressum">
+            <h3>Impressum</h3>
+            <p><strong>Sebastian Mayr</strong></p>
+            <p>Altstadt 2</p>
+            <p>4020 Linz</p>
+            <p>Email: <a href="mailto:2emufo7h5@mozmail.com">2emufo7h5@mozmail.com</a></p>
+            <p><strong>Disclaimer:</strong></p>
+            <p>This website is a personal, non-commercial project.<br>
+            All linked services are third-party platforms, and this site does not engage in commercial activities.<br>
+            The information provided is not guaranteed to be accurate or complete.</p>
+        </div>
     </div>
-    
+    </div>
+
     <div class="venue-tooltip" id="tooltip"></div>
     
     <script>
         let currentData = null;
         let tooltip = document.getElementById('tooltip');
+
+        // Gantt timeline constants: 07:00–22:00 in 15-min steps = 60 columns
+        const GANTT_START_MIN = 7 * 60;
+        const GANTT_END_MIN   = 22 * 60;
+        const GANTT_STEP_MIN  = 15;
+        const GANTT_COLS      = (GANTT_END_MIN - GANTT_START_MIN) / GANTT_STEP_MIN; // 60
+
+        function timeToGanttCol(timeStr) {
+            const [h, m] = timeStr.split(':').map(Number);
+            const minutes = Math.max(GANTT_START_MIN, Math.min(GANTT_END_MIN, h * 60 + m));
+            return Math.round((minutes - GANTT_START_MIN) / GANTT_STEP_MIN) + 2; // +2: 1-based + day col
+        }
         
         // File input handler - used by browse button
         document.getElementById('jsonFileInput').addEventListener('change', function(e) {
@@ -675,6 +789,8 @@
             
             // Show filters
             document.getElementById('filters').style.display = 'flex';
+            document.getElementById('nameFilters').style.display = 'flex';
+            document.getElementById('regionFilters').style.display = 'flex';
             
             // Update summary
             document.getElementById('summary').style.display = 'grid';
@@ -708,55 +824,82 @@
             const headerRow = document.createElement('div');
             headerRow.className = 'calendar-header';
             
-            // Empty cell for day column
+            // Day label header
+            // Header "Day" cell — doubles as expand/collapse all toggle
             const emptyHeader = document.createElement('div');
             emptyHeader.className = 'calendar-header-cell day-header';
-            emptyHeader.textContent = 'Day';
+            emptyHeader.style.cursor = 'pointer';
+            emptyHeader.style.userSelect = 'none';
             headerRow.appendChild(emptyHeader);
-            
-            // Time headers
-            currentData.sorted_times.forEach(time => {
-                const timeHeader = document.createElement('div');
-                timeHeader.className = 'calendar-header-cell';
-                timeHeader.textContent = time;
-                headerRow.appendChild(timeHeader);
-            });
-            
+
+            // Hour labels — each spans 4 × 15-min columns
+            const colsPerHour = 60 / GANTT_STEP_MIN;
+            for (let h = GANTT_START_MIN / 60; h < GANTT_END_MIN / 60; h++) {
+                const colStart = (h * 60 - GANTT_START_MIN) / GANTT_STEP_MIN + 2;
+                const cell = document.createElement('div');
+                cell.className = 'calendar-header-cell';
+                cell.style.gridColumn = `${colStart} / span ${colsPerHour}`;
+                cell.textContent = `${h}:00`;
+                headerRow.appendChild(cell);
+            }
+
             calendar.appendChild(headerRow);
-            
+
+            function updateToggleAll() {
+                const rows = calendar.querySelectorAll('.calendar-row');
+                const anyExpanded = [...rows].some(r => r.classList.contains('expanded'));
+                emptyHeader.textContent = anyExpanded ? 'Collapse All ▲' : 'Expand All ▼';
+            }
+
+            emptyHeader.addEventListener('click', () => {
+                const rows = calendar.querySelectorAll('.calendar-row');
+                const anyExpanded = [...rows].some(r => r.classList.contains('expanded'));
+                rows.forEach(r => {
+                    r.classList.toggle('expanded', !anyExpanded);
+                    const hint = r.querySelector('.expand-hint');
+                    if (hint) hint.textContent = anyExpanded ? '▼' : '▲';
+                });
+                updateToggleAll();
+            });
+
             // Day rows
             currentData.sorted_dates.forEach(date => {
                 const dayData = currentData.calendar_grid[date];
                 const row = document.createElement('div');
-                row.className = 'calendar-row';
-                
-                // Day cell
+                row.className = 'calendar-row'; // start collapsed
+
+                // Day label cell — sticky left, spans all auto-rows via CSS
                 const dayCell = document.createElement('div');
-                dayCell.className = 'calendar-cell day-cell';
+                dayCell.className = 'day-cell';
                 dayCell.innerHTML = `
-                    <div class="day-name">${dayData.day_name}</div>
+                    <div class="day-name">${dayData.day_name}<span class="expand-hint">▼</span></div>
                     <div class="day-date">${dayData.day_of_week}</div>
                 `;
-                row.appendChild(dayCell);
-                
-                // Time slot cells
-                currentData.sorted_times.forEach(time => {
-                    const cell = document.createElement('div');
-                    cell.className = 'calendar-cell';
-                    
-                    const venues = dayData.slots_by_time[time] || [];
-                    
-                    venues.forEach(venue => {
-                        const slot = createVenueSlot(venue, date);
-                        cell.appendChild(slot);
-                    });
-                    
-                    row.appendChild(cell);
+                dayCell.addEventListener('click', () => {
+                    row.classList.toggle('expanded');
+                    dayCell.querySelector('.expand-hint').textContent =
+                        row.classList.contains('expanded') ? '▲' : '▼';
+                    updateToggleAll();
                 });
-                
+                row.appendChild(dayCell);
+
+                // Place each venue chip directly in the grid with correct column span
+                Object.entries(dayData.slots_by_time).forEach(([timeFrom, venues]) => {
+                    const startCol = timeToGanttCol(timeFrom);
+                    venues.forEach(venue => {
+                        const endCol = timeToGanttCol(venue.time_to);
+                        const slot = createVenueSlot(venue, date);
+                        slot.style.gridColumn = `${startCol} / ${Math.max(startCol + 1, endCol)}`;
+                        row.appendChild(slot);
+                    });
+                });
+
                 calendar.appendChild(row);
             });
-            
+
+            // Set initial header text (all expanded)
+            updateToggleAll();
+
             calendarWrapper.appendChild(calendar);
             content.appendChild(calendarWrapper);
             
@@ -765,21 +908,33 @@
         }
         
         function initializeFilters() {
-            // Default filter state: show only available + unavailable
-            const defaultFilters = {
-                filterAvailable: true,
-                filterUnavailable: true,
-                filterBlocked: false,
-                filterNotOffered: false
-            };
-            
-            // Apply default filters
-            document.getElementById('filterAvailable').checked = defaultFilters.filterAvailable;
-            document.getElementById('filterUnavailable').checked = defaultFilters.filterUnavailable;
-            document.getElementById('filterBlocked').checked = defaultFilters.filterBlocked;
-            document.getElementById('filterNotOffered').checked = defaultFilters.filterNotOffered;
-            
-            // Apply the filters immediately
+            // Default name filters
+            document.getElementById('filterInclude').value = '';
+            document.getElementById('filterExclude').value = 'Gymnastik';
+
+            // Default filter state: show only available
+            document.getElementById('filterAvailable').checked = true;
+            document.getElementById('filterUnavailable').checked = false;
+            document.getElementById('filterBlocked').checked = false;
+            document.getElementById('filterNotOffered').checked = false;
+
+            // Detect which regions are present in the data
+            const presentRegions = new Set();
+            currentData.sorted_dates.forEach(date => {
+                const dayData = currentData.calendar_grid[date];
+                Object.values(dayData.slots_by_time).forEach(venues => {
+                    venues.forEach(v => { if (v.region) presentRegions.add(v.region); });
+                });
+            });
+
+            // Show/hide region checkboxes based on what's in the data; default Nord checked
+            ['Nord', 'Ost', 'Süd', 'West'].forEach(r => {
+                const el = document.getElementById('filterRegion' + r);
+                const label = el ? el.closest('label') : null;
+                if (label) label.style.display = presentRegions.has(r) ? '' : 'none';
+                if (el) el.checked = (r === 'Nord');
+            });
+
             applyFilters();
         }
         
@@ -788,24 +943,48 @@
             const showUnavailable = document.getElementById('filterUnavailable').checked;
             const showBlocked = document.getElementById('filterBlocked').checked;
             const showNotOffered = document.getElementById('filterNotOffered').checked;
-            
-            // Get all venue slots
-            const slots = document.querySelectorAll('.venue-slot');
-            
-            slots.forEach(slot => {
+
+            const includeInput = document.getElementById('filterInclude');
+            const excludeInput = document.getElementById('filterExclude');
+            let includeRe = null, excludeRe = null;
+            try {
+                const v = includeInput.value.trim();
+                includeRe = v ? new RegExp(v, 'i') : null;
+                includeInput.style.borderColor = '';
+            } catch(e) { includeInput.style.borderColor = '#e53935'; }
+            try {
+                const v = excludeInput.value.trim();
+                excludeRe = v ? new RegExp(v, 'i') : null;
+                excludeInput.style.borderColor = '';
+            } catch(e) { excludeInput.style.borderColor = '#e53935'; }
+
+            const activeRegions = new Set(
+                ['Nord', 'Ost', 'Süd', 'West']
+                    .filter(r => {
+                        const el = document.getElementById('filterRegion' + r);
+                        return el && el.checked;
+                    })
+            );
+            // If no region checkbox exists/is visible, don't filter by region
+            const hasRegionFilter = activeRegions.size > 0;
+
+            document.querySelectorAll('.venue-slot').forEach(slot => {
                 const status = slot.classList.contains('available') ? 'available' :
-                              slot.classList.contains('unavailable') ? 'unavailable' :
-                              slot.classList.contains('blocked') ? 'blocked' :
-                              slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
-                
-                let shouldShow = false;
-                
-                if (status === 'available' && showAvailable) shouldShow = true;
-                if (status === 'unavailable' && showUnavailable) shouldShow = true;
-                if (status === 'blocked' && showBlocked) shouldShow = true;
-                if (status === 'not_offered' && showNotOffered) shouldShow = true;
-                
-                if (shouldShow) {
+                               slot.classList.contains('unavailable') ? 'unavailable' :
+                               slot.classList.contains('blocked') ? 'blocked' :
+                               slot.classList.contains('not_offered') ? 'not_offered' : 'unknown';
+
+                const region = slot.dataset.region;
+                const name = slot.dataset.venueName || '';
+                const statusOk = (status === 'available' && showAvailable) ||
+                                 (status === 'unavailable' && showUnavailable) ||
+                                 (status === 'blocked' && showBlocked) ||
+                                 (status === 'not_offered' && showNotOffered);
+                const regionOk = !hasRegionFilter || !region || activeRegions.has(region);
+                const nameOk = (!includeRe || includeRe.test(name)) &&
+                               (!excludeRe || !excludeRe.test(name));
+
+                if (statusOk && regionOk && nameOk) {
                     slot.classList.remove('filtered-out');
                 } else {
                     slot.classList.add('filtered-out');
@@ -817,9 +996,11 @@
             const slot = document.createElement('div');
             slot.className = 'venue-slot';
             
-            // Add status class
+            // Add status class and region
             const status = venue.status || 'available';
             slot.classList.add(status);
+            if (venue.region) slot.dataset.region = venue.region;
+            slot.dataset.venueName = venue.venue_name;
             
             const name = document.createElement('div');
             name.className = 'venue-slot-name';

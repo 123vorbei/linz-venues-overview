@@ -10,7 +10,7 @@ on:
     # Run at 12:00 UTC
     #- cron: '0 12 * * *'
     # Run at 18:00 UTC
-    - cron: '0 18 * * *'
+    #- cron: '0 18 * * *'
     # Run at 22:00 UTC
     #- cron: '0 22 * * *'
   workflow_dispatch:  # Allow manual trigger
