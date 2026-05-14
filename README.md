@@ -1,6 +1,6 @@
 # Venuzle Calendar Viewer
 
-A venue calendar viewer for Stadt Linz booking system with automated daily scraping via GitHub Actions.
+A poorly vibecoded venue calendar viewer for Stadt Linz sports hall booking system with automated daily scraping via GitHub Actions.
 
 ## GitHub Pages Setup
 

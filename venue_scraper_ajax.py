@@ -209,13 +209,16 @@ class VenueCalendarAggregator:
             else:
                 slot_type = 'unknown'
             
+            # Normalize price to price per hour
+            slot_price = self._normalize_price_per_hour(price, hour_from, hour_to_str)
+
             # Only add if it's not a tiny spacing cell
-            if colspan >= 12:  # At least 1 hour
+            if colspan >= 1:
                 slots.append({
                     'time': f"{hour_from}-{hour_to_str}",
                     'time_from': hour_from,
                     'time_to': hour_to_str,
-                    'price': price if price and price != '&nbsp;' else None,
+                    'price': slot_price,
                     'status': slot_type,
                     'is_available': is_available,
                     'reason': reason
@@ -223,8 +226,80 @@ class VenueCalendarAggregator:
             
             cell_index += colspan
         
-        return slots
+        # Merge consecutive slots before returning
+        return self._merge_consecutive_slots(slots)
     
+    def _parse_price_value(self, price_text: str):
+        """
+        Parse the raw price string into a numeric euro value.
+        """
+        if not price_text:
+            return None
+        
+        cleaned = price_text.replace('\u00A0', '').strip()
+        cleaned = re.sub(r'[^\d,.-]', '', cleaned)
+        cleaned = cleaned.replace(',', '.')
+        
+        try:
+            return float(cleaned)
+        except ValueError:
+            return None
+
+    def _normalize_price_per_hour(self, price_text: str, time_from: str, time_to: str):
+        """
+        Convert a slot price into price-per-hour using the slot duration.
+        """
+        total_price = self._parse_price_value(price_text)
+        if total_price is None:
+            return None
+
+        try:
+            start_h, start_m = map(int, time_from.split(':'))
+            end_h, end_m = map(int, time_to.split(':'))
+        except ValueError:
+            return None
+
+        duration_minutes = (end_h * 60 + end_m) - (start_h * 60 + start_m)
+        if duration_minutes <= 0:
+            return None
+
+        price_per_hour = total_price * 60 / duration_minutes
+        return f"{price_per_hour:.2f}".replace('.', ',')
+    
+    def _merge_consecutive_slots(self, slots: List[Dict]) -> List[Dict]:
+        """
+        Merge consecutive slots for the same venue when status, availability
+        and price-per-hour are compatible.
+        """
+        if not slots:
+            return slots
+        
+        sorted_slots = sorted(slots, key=lambda s: s['time_from'])
+        merged = []
+        current = sorted_slots[0].copy()
+
+        def _prices_mergeable(price_a, price_b):
+            return price_a == price_b or price_a is None or price_b is None
+
+        for slot in sorted_slots[1:]:
+            if (
+                current['time_to'] == slot['time_from'] and
+                current['status'] == slot['status'] and
+                current['is_available'] == slot['is_available'] and
+                _prices_mergeable(current.get('price'), slot.get('price'))
+            ):
+                current['time_to'] = slot['time_to']
+                current['time'] = f"{current['time_from']}-{current['time_to']}"
+                if current.get('price') is None:
+                    current['price'] = slot.get('price')
+                if current.get('reason') is None:
+                    current['reason'] = slot.get('reason')
+            else:
+                merged.append(current)
+                current = slot.copy()
+
+        merged.append(current)
+        return merged
     def get_week_availability(self, start_date: str, days: int = 7, active_regions: List[int] = None) -> Dict:
         """
         Fetch availability for multiple days across one or more regions.
