@@ -1,1433 +1,5 @@
 {
   "calendar_grid": {
-    "20260914": {
-      "day_name": "Mon 14.09",
-      "day_of_week": "Monday",
-      "date_formatted": "14.09.2026",
-      "slots_by_time": {
-        "07:00": [
-          {
-            "venue_id": 40,
-            "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
-            "region": "Nord",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 41,
-            "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
-            "region": "Nord",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 75,
-            "venue_name": "Dornach - Normalhalle",
-            "region": "Nord",
-            "time_range": "07:00-16:00",
-            "time_to": "16:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 17,
-            "venue_name": "Harbachschule - 2-fach Halle",
-            "region": "Nord",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 18,
-            "venue_name": "Harbachschule - Teilhalle links",
-            "region": "Nord",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 19,
-            "venue_name": "Harbachschule - Teilhalle rechts",
-            "region": "Nord",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 52,
-            "venue_name": "Jahnschule - Gymnastiksaal",
-            "region": "Nord",
-            "time_range": "07:00-19:30",
-            "time_to": "19:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
-            "region": "Nord",
-            "time_range": "07:00-16:00",
-            "time_to": "16:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 73,
-            "venue_name": "Karlhofschule - Turnsaal rechts",
-            "region": "Nord",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 32,
-            "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
-            "region": "Nord",
-            "time_range": "07:00-17:15",
-            "time_to": "17:15",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 33,
-            "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
-            "region": "Nord",
-            "time_range": "07:00-17:15",
-            "time_to": "17:15",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 34,
-            "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
-            "region": "Nord",
-            "time_range": "07:00-17:15",
-            "time_to": "17:15",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 77,
-            "venue_name": "Magdalenaschule - Turnsaal",
-            "region": "Nord",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 89,
-            "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
-            "region": "Nord",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 88,
-            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
-            "region": "Nord",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 76,
-            "venue_name": "Pöstlingbergschule - Gymnastiksaal",
-            "region": "Nord",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 86,
-            "venue_name": "Robinsonschule - Turnsaal",
-            "region": "Nord",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "region": "Nord",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 51,
-            "venue_name": "Weberschule - Turnsaal OG",
-            "region": "Nord",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 29,
-            "venue_name": "Diesterwegschule - 2-fach Halle",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 30,
-            "venue_name": "Diesterwegschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 31,
-            "venue_name": "Diesterwegschule - Teilhalle rechts",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 58,
-            "venue_name": "Diesterwegschule* - Gymnastiksaal",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 70,
-            "venue_name": "Dorfhalleschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 35,
-            "venue_name": "Goetheschule - 2-fach Halle",
-            "region": "Ost",
-            "time_range": "07:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 36,
-            "venue_name": "Goetheschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 37,
-            "venue_name": "Goetheschule - Teilhalle rechts",
-            "region": "Ost",
-            "time_range": "07:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 46,
-            "venue_name": "Grillparzerschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "07:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 43,
-            "venue_name": "Mozartschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 25,
-            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 26,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 27,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 28,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 68,
-            "venue_name": "Dr.-Ernst-Koref-Schule* - Gymnastiksaal",
-            "region": "West",
-            "time_range": "07:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 85,
-            "venue_name": "Edmund-Aigner-Schule - Gymnastiksaal",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 84,
-            "venue_name": "Edmund-Aigner-Schule - Normalhalle",
-            "region": "West",
-            "time_range": "07:00-16:30",
-            "time_to": "16:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 5,
-            "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 6,
-            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 7,
-            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 8,
-            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 45,
-            "venue_name": "Froschbergschule - Turnsaal",
-            "region": "West",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 80,
-            "venue_name": "Hausleitnerweg VS - Normalhalle",
-            "region": "West",
-            "time_range": "07:00-16:00",
-            "time_to": "16:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 69,
-            "venue_name": "Keferfeldschule - Normalhalle",
-            "region": "West",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 74,
-            "venue_name": "Margarethenschule - Gymnastiksaal",
-            "region": "West",
-            "time_range": "07:00-17:00",
-            "time_to": "17:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 47,
-            "venue_name": "Otto-Glöckel-Schule - Turnsaal EG",
-            "region": "West",
-            "time_range": "07:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 48,
-            "venue_name": "Otto-Glöckel-Schule - Turnsaal OG",
-            "region": "West",
-            "time_range": "07:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 44,
-            "venue_name": "Römerbergschule - Turnsaal",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 59,
-            "venue_name": "Spallerhofschule - Normalhalle",
-            "region": "West",
-            "time_range": "07:00-19:00",
-            "time_to": "19:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 60,
-            "venue_name": "Spallerhofschule - Turnsaal",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 78,
-            "venue_name": "Stadlerschule - Normalhalle",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 38,
-            "venue_name": "Stelzhamerschule - Normalhalle UG",
-            "region": "West",
-            "time_range": "07:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 39,
-            "venue_name": "Stelzhamerschule - Normalhalle OG",
-            "region": "West",
-            "time_range": "07:00-17:30",
-            "time_to": "17:30",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 87,
-            "venue_name": "Waldorf Schule - Turnsaal",
-            "region": "West",
-            "time_range": "07:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          }
-        ],
-        "18:00": [
-          {
-            "venue_id": 40,
-            "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
-            "region": "Nord",
-            "time_range": "18:00-19:30",
-            "time_to": "19:30",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 41,
-            "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
-            "region": "Nord",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
-            "region": "Nord",
-            "time_range": "18:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 73,
-            "venue_name": "Karlhofschule - Turnsaal rechts",
-            "region": "Nord",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 89,
-            "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
-            "region": "Nord",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 76,
-            "venue_name": "Pöstlingbergschule - Gymnastiksaal",
-            "region": "Nord",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 29,
-            "venue_name": "Diesterwegschule - 2-fach Halle",
-            "region": "Ost",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 31,
-            "venue_name": "Diesterwegschule - Teilhalle rechts",
-            "region": "Ost",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 70,
-            "venue_name": "Dorfhalleschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "18:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 43,
-            "venue_name": "Mozartschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "18:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 45,
-            "venue_name": "Froschbergschule - Turnsaal",
-            "region": "West",
-            "time_range": "18:00-19:30",
-            "time_to": "19:30",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 38,
-            "venue_name": "Stelzhamerschule - Normalhalle UG",
-            "region": "West",
-            "time_range": "18:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "19:30": [
-          {
-            "venue_id": 40,
-            "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
-            "region": "Nord",
-            "time_range": "19:30-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 52,
-            "venue_name": "Jahnschule - Gymnastiksaal",
-            "region": "Nord",
-            "time_range": "19:30-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 45,
-            "venue_name": "Froschbergschule - Turnsaal",
-            "region": "West",
-            "time_range": "19:30-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 69,
-            "venue_name": "Keferfeldschule - Normalhalle",
-            "region": "West",
-            "time_range": "19:30-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 60,
-            "venue_name": "Spallerhofschule - Turnsaal",
-            "region": "West",
-            "time_range": "19:30-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          }
-        ],
-        "17:00": [
-          {
-            "venue_id": 41,
-            "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
-            "region": "Nord",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 86,
-            "venue_name": "Robinsonschule - Turnsaal",
-            "region": "Nord",
-            "time_range": "17:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 29,
-            "venue_name": "Diesterwegschule - 2-fach Halle",
-            "region": "Ost",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": "39,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 30,
-            "venue_name": "Diesterwegschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "17:00-18:30",
-            "time_to": "18:30",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 31,
-            "venue_name": "Diesterwegschule - Teilhalle rechts",
-            "region": "Ost",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 58,
-            "venue_name": "Diesterwegschule* - Gymnastiksaal",
-            "region": "Ost",
-            "time_range": "17:00-20:00",
-            "time_to": "20:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 70,
-            "venue_name": "Dorfhalleschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 43,
-            "venue_name": "Mozartschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "17:00-18:00",
-            "time_to": "18:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 69,
-            "venue_name": "Keferfeldschule - Normalhalle",
-            "region": "West",
-            "time_range": "17:00-19:30",
-            "time_to": "19:30",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 74,
-            "venue_name": "Margarethenschule - Gymnastiksaal",
-            "region": "West",
-            "time_range": "17:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "16:00": [
-          {
-            "venue_id": 75,
-            "venue_name": "Dornach - Normalhalle",
-            "region": "Nord",
-            "time_range": "16:00-20:00",
-            "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
-            "region": "Nord",
-            "time_range": "16:00-18:00",
-            "time_to": "18:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 80,
-            "venue_name": "Hausleitnerweg VS - Normalhalle",
-            "region": "West",
-            "time_range": "16:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "unavailable",
-            "is_available": false,
-            "reason": "<b>Nicht buchbar</b>"
-          }
-        ],
-        "20:00": [
-          {
-            "venue_id": 75,
-            "venue_name": "Dornach - Normalhalle",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 72,
-            "venue_name": "Karlhofschule - Turnsaal links",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 51,
-            "venue_name": "Weberschule - Turnsaal OG",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 58,
-            "venue_name": "Diesterwegschule* - Gymnastiksaal",
-            "region": "Ost",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 70,
-            "venue_name": "Dorfhalleschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 46,
-            "venue_name": "Grillparzerschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 47,
-            "venue_name": "Otto-Glöckel-Schule - Turnsaal EG",
-            "region": "West",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 48,
-            "venue_name": "Otto-Glöckel-Schule - Turnsaal OG",
-            "region": "West",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "17:30": [
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "17:30-19:00",
-            "time_to": "19:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 88,
-            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
-            "region": "Nord",
-            "time_range": "17:30-19:00",
-            "time_to": "19:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 50,
-            "venue_name": "Weberschule - Turnsaal EG",
-            "region": "Nord",
-            "time_range": "17:30-20:00",
-            "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 51,
-            "venue_name": "Weberschule - Turnsaal OG",
-            "region": "Nord",
-            "time_range": "17:30-20:00",
-            "time_to": "20:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 36,
-            "venue_name": "Goetheschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "17:30-19:00",
-            "time_to": "19:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 25,
-            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
-            "region": "West",
-            "time_range": "17:30-19:00",
-            "time_to": "19:00",
-            "price": "58,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 26,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
-            "region": "West",
-            "time_range": "17:30-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 27,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
-            "region": "West",
-            "time_range": "17:30-19:00",
-            "time_to": "19:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 28,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
-            "region": "West",
-            "time_range": "17:30-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 60,
-            "venue_name": "Spallerhofschule - Turnsaal",
-            "region": "West",
-            "time_range": "17:30-19:30",
-            "time_to": "19:30",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 39,
-            "venue_name": "Stelzhamerschule - Normalhalle OG",
-            "region": "West",
-            "time_range": "17:30-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "19:00": [
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "19:00-20:00",
-            "time_to": "20:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 88,
-            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
-            "region": "Nord",
-            "time_range": "19:00-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 36,
-            "venue_name": "Goetheschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "19:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 25,
-            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
-            "region": "West",
-            "time_range": "19:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 27,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
-            "region": "West",
-            "time_range": "19:00-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 59,
-            "venue_name": "Spallerhofschule - Normalhalle",
-            "region": "West",
-            "time_range": "19:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "17:15": [
-          {
-            "venue_id": 32,
-            "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
-            "region": "Nord",
-            "time_range": "17:15-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
-            "reason": "<b>Sperre 17:15 - 22:00</b>"
-          },
-          {
-            "venue_id": 33,
-            "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
-            "region": "Nord",
-            "time_range": "17:15-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
-            "reason": "<b>Sperre 17:15 - 22:00</b>"
-          },
-          {
-            "venue_id": 34,
-            "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
-            "region": "Nord",
-            "time_range": "17:15-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "blocked",
-            "is_available": false,
-            "reason": "<b>Sperre 17:15 - 22:00</b>"
-          }
-        ],
-        "18:30": [
-          {
-            "venue_id": 30,
-            "venue_name": "Diesterwegschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "18:30-21:00",
-            "time_to": "21:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 84,
-            "venue_name": "Edmund-Aigner-Schule - Normalhalle",
-            "region": "West",
-            "time_range": "18:30-22:00",
-            "time_to": "22:00",
-            "price": null,
-            "status": "not_offered",
-            "is_available": false,
-            "reason": null
-          }
-        ],
-        "21:00": [
-          {
-            "venue_id": 30,
-            "venue_name": "Diesterwegschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 35,
-            "venue_name": "Goetheschule - 2-fach Halle",
-            "region": "Ost",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "39,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 36,
-            "venue_name": "Goetheschule - Teilhalle links",
-            "region": "Ost",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 37,
-            "venue_name": "Goetheschule - Teilhalle rechts",
-            "region": "Ost",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 43,
-            "venue_name": "Mozartschule - Turnsaal",
-            "region": "Ost",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 25,
-            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
-            "region": "West",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "58,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 27,
-            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
-            "region": "West",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 68,
-            "venue_name": "Dr.-Ernst-Koref-Schule* - Gymnastiksaal",
-            "region": "West",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 45,
-            "venue_name": "Froschbergschule - Turnsaal",
-            "region": "West",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          },
-          {
-            "venue_id": 69,
-            "venue_name": "Keferfeldschule - Normalhalle",
-            "region": "West",
-            "time_range": "21:00-22:00",
-            "time_to": "22:00",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ],
-        "16:30": [
-          {
-            "venue_id": 84,
-            "venue_name": "Edmund-Aigner-Schule - Normalhalle",
-            "region": "West",
-            "time_range": "16:30-18:30",
-            "time_to": "18:30",
-            "price": "19,50",
-            "status": "available",
-            "is_available": true,
-            "reason": null
-          }
-        ]
-      }
-    },
     "20260915": {
       "day_name": "Tue 15.09",
       "day_of_week": "Tuesday",
@@ -4089,8 +2661,8 @@
             "venue_id": 91,
             "venue_name": "Harbachschule - Gymnastikraum",
             "region": "Nord",
-            "time_range": "07:00-20:00",
-            "time_to": "20:00",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
             "price": null,
             "status": "not_offered",
             "is_available": false,
@@ -4960,17 +3532,6 @@
             "price": null,
             "status": "not_offered",
             "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
             "reason": null
           },
           {
@@ -22836,8 +21397,8 @@
             "venue_id": 91,
             "venue_name": "Harbachschule - Gymnastikraum",
             "region": "Nord",
-            "time_range": "07:00-20:00",
-            "time_to": "20:00",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
             "price": null,
             "status": "not_offered",
             "is_available": false,
@@ -23762,17 +22323,6 @@
             "price": null,
             "status": "not_offered",
             "is_available": false,
-            "reason": null
-          },
-          {
-            "venue_id": 91,
-            "venue_name": "Harbachschule - Gymnastikraum",
-            "region": "Nord",
-            "time_range": "20:00-22:00",
-            "time_to": "22:00",
-            "price": "13,00",
-            "status": "available",
-            "is_available": true,
             "reason": null
           },
           {
@@ -27044,6 +25594,1244 @@
           }
         ]
       }
+    },
+    "20261004": {
+      "day_name": "Sun 04.10",
+      "day_of_week": "Sunday",
+      "date_formatted": "04.10.2026",
+      "slots_by_time": {
+        "07:00": [
+          {
+            "venue_id": 40,
+            "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 41,
+            "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 17,
+            "venue_name": "Harbachschule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 18,
+            "venue_name": "Harbachschule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 19,
+            "venue_name": "Harbachschule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 91,
+            "venue_name": "Harbachschule - Gymnastikraum",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 52,
+            "venue_name": "Jahnschule - Gymnastiksaal",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 72,
+            "venue_name": "Karlhofschule - Turnsaal links",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 73,
+            "venue_name": "Karlhofschule - Turnsaal rechts",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 32,
+            "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 33,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 34,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 77,
+            "venue_name": "Magdalenaschule - Turnsaal",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 89,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 88,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 76,
+            "venue_name": "Pöstlingbergschule - Gymnastiksaal",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 86,
+            "venue_name": "Robinsonschule - Turnsaal",
+            "region": "Nord",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 50,
+            "venue_name": "Weberschule - Turnsaal EG",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 51,
+            "venue_name": "Weberschule - Turnsaal OG",
+            "region": "Nord",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 29,
+            "venue_name": "Diesterwegschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 30,
+            "venue_name": "Diesterwegschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 31,
+            "venue_name": "Diesterwegschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 58,
+            "venue_name": "Diesterwegschule* - Gymnastiksaal",
+            "region": "Ost",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 70,
+            "venue_name": "Dorfhalleschule - Turnsaal",
+            "region": "Ost",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 35,
+            "venue_name": "Goetheschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 36,
+            "venue_name": "Goetheschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 37,
+            "venue_name": "Goetheschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 46,
+            "venue_name": "Grillparzerschule - Turnsaal",
+            "region": "Ost",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 43,
+            "venue_name": "Mozartschule - Turnsaal",
+            "region": "Ost",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 25,
+            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 26,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 27,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 28,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 68,
+            "venue_name": "Dr.-Ernst-Koref-Schule* - Gymnastiksaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 85,
+            "venue_name": "Edmund-Aigner-Schule - Gymnastiksaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 84,
+            "venue_name": "Edmund-Aigner-Schule - Normalhalle",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 5,
+            "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 6,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 7,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 8,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 45,
+            "venue_name": "Froschbergschule - Turnsaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 80,
+            "venue_name": "Hausleitnerweg VS - Normalhalle",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 69,
+            "venue_name": "Keferfeldschule - Normalhalle",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 74,
+            "venue_name": "Margarethenschule - Gymnastiksaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 47,
+            "venue_name": "Otto-Glöckel-Schule - Turnsaal EG",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 48,
+            "venue_name": "Otto-Glöckel-Schule - Turnsaal OG",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 44,
+            "venue_name": "Römerbergschule - Turnsaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 59,
+            "venue_name": "Spallerhofschule - Normalhalle",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 60,
+            "venue_name": "Spallerhofschule - Turnsaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 78,
+            "venue_name": "Stadlerschule - Normalhalle",
+            "region": "West",
+            "time_range": "07:00-08:00",
+            "time_to": "08:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 38,
+            "venue_name": "Stelzhamerschule - Normalhalle UG",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 39,
+            "venue_name": "Stelzhamerschule - Normalhalle OG",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 87,
+            "venue_name": "Waldorf Schule - Turnsaal",
+            "region": "West",
+            "time_range": "07:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          }
+        ],
+        "08:00": [
+          {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
+            "region": "Nord",
+            "time_range": "08:00-10:00",
+            "time_to": "10:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 17,
+            "venue_name": "Harbachschule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "39,00",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 18,
+            "venue_name": "Harbachschule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 19,
+            "venue_name": "Harbachschule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 72,
+            "venue_name": "Karlhofschule - Turnsaal links",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 73,
+            "venue_name": "Karlhofschule - Turnsaal rechts",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 32,
+            "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "39,00",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 33,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 34,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 89,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": null,
+            "status": "blocked",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 88,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 50,
+            "venue_name": "Weberschule - Turnsaal EG",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": null,
+            "status": "blocked",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 51,
+            "venue_name": "Weberschule - Turnsaal OG",
+            "region": "Nord",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": null,
+            "status": "blocked",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 29,
+            "venue_name": "Diesterwegschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "39,00",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 30,
+            "venue_name": "Diesterwegschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 31,
+            "venue_name": "Diesterwegschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 35,
+            "venue_name": "Goetheschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "39,00",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 36,
+            "venue_name": "Goetheschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 37,
+            "venue_name": "Goetheschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 25,
+            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "58,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 26,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 27,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 28,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 5,
+            "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "58,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 6,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 7,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 8,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          },
+          {
+            "venue_id": 78,
+            "venue_name": "Stadlerschule - Normalhalle",
+            "region": "West",
+            "time_range": "08:00-09:00",
+            "time_to": "09:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          }
+        ],
+        "10:00": [
+          {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
+            "region": "Nord",
+            "time_range": "10:00-13:00",
+            "time_to": "13:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          }
+        ],
+        "13:00": [
+          {
+            "venue_id": 75,
+            "venue_name": "Dornach - Normalhalle",
+            "region": "Nord",
+            "time_range": "13:00-22:00",
+            "time_to": "22:00",
+            "price": "19,50",
+            "status": "available",
+            "is_available": true,
+            "reason": null
+          }
+        ],
+        "09:00": [
+          {
+            "venue_id": 17,
+            "venue_name": "Harbachschule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 18,
+            "venue_name": "Harbachschule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 19,
+            "venue_name": "Harbachschule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 72,
+            "venue_name": "Karlhofschule - Turnsaal links",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 73,
+            "venue_name": "Karlhofschule - Turnsaal rechts",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 32,
+            "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 33,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 34,
+            "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 89,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 88,
+            "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 50,
+            "venue_name": "Weberschule - Turnsaal EG",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 51,
+            "venue_name": "Weberschule - Turnsaal OG",
+            "region": "Nord",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 29,
+            "venue_name": "Diesterwegschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 30,
+            "venue_name": "Diesterwegschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 31,
+            "venue_name": "Diesterwegschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 35,
+            "venue_name": "Goetheschule - 2-fach Halle",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 36,
+            "venue_name": "Goetheschule - Teilhalle links",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 37,
+            "venue_name": "Goetheschule - Teilhalle rechts",
+            "region": "Ost",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 25,
+            "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 26,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 27,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 28,
+            "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 5,
+            "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 6,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 7,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 8,
+            "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          },
+          {
+            "venue_id": 78,
+            "venue_name": "Stadlerschule - Normalhalle",
+            "region": "West",
+            "time_range": "09:00-22:00",
+            "time_to": "22:00",
+            "price": null,
+            "status": "not_offered",
+            "is_available": false,
+            "reason": null
+          }
+        ]
+      }
     }
   },
   "sorted_times": [
@@ -27059,7 +26847,6 @@
     "16:00",
     "16:30",
     "17:00",
-    "17:15",
     "17:30",
     "18:00",
     "18:30",
@@ -27070,7 +26857,6 @@
     "21:00"
   ],
   "sorted_dates": [
-    "20260914",
     "20260915",
     "20260916",
     "20260917",
@@ -27089,576 +26875,13 @@
     "20260930",
     "20261001",
     "20261002",
-    "20261003"
+    "20261003",
+    "20261004"
   ],
-  "start_date": "20260914",
-  "end_date": "20261003",
+  "start_date": "20260915",
+  "end_date": "20261004",
   "total_days": 60,
   "all_days_data": [
-    {
-      "date": "20260914",
-      "url": "https://book.venuzle.at/stadt-linz/venues/c/6/20260914/ajax/",
-      "region": "Nord",
-      "venues": [
-        {
-          "venue_id": 40,
-          "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-19:30",
-              "time_from": "18:00",
-              "time_to": "19:30",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:30-22:00",
-              "time_from": "19:30",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 41,
-          "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:00",
-              "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 75,
-          "venue_name": "Dornach - Normalhalle",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-16:00",
-              "time_from": "07:00",
-              "time_to": "16:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "16:00-20:00",
-              "time_from": "16:00",
-              "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 17,
-          "venue_name": "Harbachschule - 2-fach Halle",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 18,
-          "venue_name": "Harbachschule - Teilhalle links",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 19,
-          "venue_name": "Harbachschule - Teilhalle rechts",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 91,
-          "venue_name": "Harbachschule - Gymnastikraum",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-19:00",
-              "time_from": "17:30",
-              "time_to": "19:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:00-20:00",
-              "time_from": "19:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 52,
-          "venue_name": "Jahnschule - Gymnastiksaal",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-19:30",
-              "time_from": "07:00",
-              "time_to": "19:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "19:30-22:00",
-              "time_from": "19:30",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 72,
-          "venue_name": "Karlhofschule - Turnsaal links",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-16:00",
-              "time_from": "07:00",
-              "time_to": "16:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "16:00-18:00",
-              "time_from": "16:00",
-              "time_to": "18:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "18:00-20:00",
-              "time_from": "18:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 73,
-          "venue_name": "Karlhofschule - Turnsaal rechts",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 32,
-          "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:15",
-              "time_from": "07:00",
-              "time_to": "17:15",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:15-22:00",
-              "time_from": "17:15",
-              "time_to": "22:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
-              "reason": "<b>Sperre 17:15 - 22:00</b>"
-            }
-          ]
-        },
-        {
-          "venue_id": 33,
-          "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:15",
-              "time_from": "07:00",
-              "time_to": "17:15",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:15-22:00",
-              "time_from": "17:15",
-              "time_to": "22:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
-              "reason": "<b>Sperre 17:15 - 22:00</b>"
-            }
-          ]
-        },
-        {
-          "venue_id": 34,
-          "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:15",
-              "time_from": "07:00",
-              "time_to": "17:15",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:15-22:00",
-              "time_from": "17:15",
-              "time_to": "22:00",
-              "price": null,
-              "status": "blocked",
-              "is_available": false,
-              "reason": "<b>Sperre 17:15 - 22:00</b>"
-            }
-          ]
-        },
-        {
-          "venue_id": 77,
-          "venue_name": "Magdalenaschule - Turnsaal",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 89,
-          "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 88,
-          "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-19:00",
-              "time_from": "17:30",
-              "time_to": "19:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:00-22:00",
-              "time_from": "19:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 76,
-          "venue_name": "Pöstlingbergschule - Gymnastiksaal",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 86,
-          "venue_name": "Robinsonschule - Turnsaal",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:00",
-              "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-22:00",
-              "time_from": "17:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 50,
-          "venue_name": "Weberschule - Turnsaal EG",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-20:00",
-              "time_from": "17:30",
-              "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 51,
-          "venue_name": "Weberschule - Turnsaal OG",
-          "region": "Nord",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-20:00",
-              "time_from": "17:30",
-              "time_to": "20:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        }
-      ],
-      "total_venues": 20,
-      "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:16.136345"
-    },
     {
       "date": "20260915",
       "url": "https://book.venuzle.at/stadt-linz/venues/c/6/20260915/ajax/",
@@ -28257,7 +27480,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:18.260409"
+      "fetched_at": "2026-09-07T11:17:44.368704"
     },
     {
       "date": "20260916",
@@ -28785,7 +28008,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:20.168387"
+      "fetched_at": "2026-09-07T11:17:46.019887"
     },
     {
       "date": "20260917",
@@ -28984,21 +28207,12 @@
           "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-20:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "20:00",
+              "time_to": "22:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
               "reason": null
             }
           ]
@@ -29403,7 +28617,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:22.069655"
+      "fetched_at": "2026-09-07T11:17:47.731511"
     },
     {
       "date": "20260918",
@@ -29931,7 +29145,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:23.964980"
+      "fetched_at": "2026-09-07T11:17:49.537120"
     },
     {
       "date": "20260919",
@@ -30486,7 +29700,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:25.757233"
+      "fetched_at": "2026-09-07T11:17:51.152755"
     },
     {
       "date": "20260920",
@@ -31041,7 +30255,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:27.497059"
+      "fetched_at": "2026-09-07T11:17:52.710538"
     },
     {
       "date": "20260921",
@@ -31587,7 +30801,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:29.360580"
+      "fetched_at": "2026-09-07T11:17:54.443199"
     },
     {
       "date": "20260922",
@@ -32169,7 +31383,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:31.269154"
+      "fetched_at": "2026-09-07T11:17:56.237642"
     },
     {
       "date": "20260923",
@@ -32715,7 +31929,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:33.583255"
+      "fetched_at": "2026-09-07T11:17:58.065027"
     },
     {
       "date": "20260924",
@@ -33333,7 +32547,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:35.583166"
+      "fetched_at": "2026-09-07T11:17:59.949628"
     },
     {
       "date": "20260925",
@@ -33861,7 +33075,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:37.519300"
+      "fetched_at": "2026-09-07T11:18:01.810139"
     },
     {
       "date": "20260926",
@@ -34416,7 +33630,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:39.244722"
+      "fetched_at": "2026-09-07T11:18:03.429416"
     },
     {
       "date": "20260927",
@@ -34989,7 +34203,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:40.961308"
+      "fetched_at": "2026-09-07T11:18:05.019906"
     },
     {
       "date": "20260928",
@@ -35535,7 +34749,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:42.738476"
+      "fetched_at": "2026-09-07T11:18:06.831691"
     },
     {
       "date": "20260929",
@@ -36135,7 +35349,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:44.576119"
+      "fetched_at": "2026-09-07T11:18:08.631874"
     },
     {
       "date": "20260930",
@@ -36681,7 +35895,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:46.476521"
+      "fetched_at": "2026-09-07T11:18:10.302021"
     },
     {
       "date": "20261001",
@@ -36880,21 +36094,12 @@
           "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-20:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "20:00",
+              "time_to": "22:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
               "reason": null
             }
           ]
@@ -37299,7 +36504,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:48.416892"
+      "fetched_at": "2026-09-07T11:18:12.000262"
     },
     {
       "date": "20261002",
@@ -37827,7 +37032,7 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:50.346042"
+      "fetched_at": "2026-09-07T11:18:13.846344"
     },
     {
       "date": "20261003",
@@ -38400,39 +37605,114 @@
       ],
       "total_venues": 20,
       "venues_with_slots": 20,
-      "fetched_at": "2026-09-06T10:04:52.059490"
+      "fetched_at": "2026-09-07T11:18:15.401453"
     },
     {
-      "date": "20260914",
-      "url": "https://book.venuzle.at/stadt-linz/venues/c/5/20260914/ajax/",
-      "region": "Ost",
+      "date": "20261004",
+      "url": "https://book.venuzle.at/stadt-linz/venues/c/6/20261004/ajax/",
+      "region": "Nord",
       "venues": [
         {
-          "venue_id": 29,
-          "venue_name": "Diesterwegschule - 2-fach Halle",
-          "region": "Ost",
+          "venue_id": 40,
+          "venue_name": "Bertha-von-Suttner-Schule - Normalhalle",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-17:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "17:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 41,
+          "venue_name": "Bertha-von-Suttner-Schule - Turnsaal",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 75,
+          "venue_name": "Dornach - Normalhalle",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
+              "time": "08:00-10:00",
+              "time_from": "08:00",
+              "time_to": "10:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "10:00-13:00",
+              "time_from": "10:00",
+              "time_to": "13:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "13:00-22:00",
+              "time_from": "13:00",
+              "time_to": "22:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 17,
+          "venue_name": "Harbachschule - 2-fach Halle",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "39,00",
               "status": "available",
               "is_available": true,
               "reason": null
             },
             {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
               "price": null,
               "status": "not_offered",
@@ -38442,74 +37722,31 @@
           ]
         },
         {
-          "venue_id": 30,
-          "venue_name": "Diesterwegschule - Teilhalle links",
-          "region": "Ost",
+          "venue_id": 18,
+          "venue_name": "Harbachschule - Teilhalle links",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-17:00",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "17:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "17:00-18:30",
-              "time_from": "17:00",
-              "time_to": "18:30",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
               "reason": null
             },
             {
-              "time": "18:30-21:00",
-              "time_from": "18:30",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 31,
-          "venue_name": "Diesterwegschule - Teilhalle rechts",
-          "region": "Ost",
-          "available_slots": [
-            {
-              "time": "07:00-17:00",
-              "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
               "price": null,
               "status": "not_offered",
@@ -38519,31 +37756,31 @@
           ]
         },
         {
-          "venue_id": 58,
-          "venue_name": "Diesterwegschule* - Gymnastiksaal",
-          "region": "Ost",
+          "venue_id": 19,
+          "venue_name": "Harbachschule - Teilhalle rechts",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-17:00",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "17:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "17:00-20:00",
-              "time_from": "17:00",
-              "time_to": "20:00",
-              "price": "13,00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
               "status": "available",
               "is_available": true,
               "reason": null
             },
             {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
               "price": null,
               "status": "not_offered",
@@ -38553,213 +37790,395 @@
           ]
         },
         {
-          "venue_id": 70,
-          "venue_name": "Dorfhalleschule - Turnsaal",
-          "region": "Ost",
+          "venue_id": 91,
+          "venue_name": "Harbachschule - Gymnastikraum",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-17:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "18:00-20:00",
-              "time_from": "18:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
               "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         },
         {
-          "venue_id": 35,
-          "venue_name": "Goetheschule - 2-fach Halle",
-          "region": "Ost",
+          "venue_id": 52,
+          "venue_name": "Jahnschule - Gymnastiksaal",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-21:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "21:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 72,
+          "venue_name": "Karlhofschule - Turnsaal links",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 73,
+          "venue_name": "Karlhofschule - Turnsaal rechts",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 32,
+          "venue_name": "Leonardo da Vinci Schule - 2-fach Halle",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "39,00",
               "status": "available",
               "is_available": true,
               "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 36,
-          "venue_name": "Goetheschule - Teilhalle links",
-          "region": "Ost",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
             },
             {
-              "time": "17:30-19:00",
-              "time_from": "17:30",
-              "time_to": "19:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:00-21:00",
-              "time_from": "19:00",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         },
         {
-          "venue_id": 37,
-          "venue_name": "Goetheschule - Teilhalle rechts",
-          "region": "Ost",
+          "venue_id": 33,
+          "venue_name": "Leonardo da Vinci Schule - Teilhalle links",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-21:00",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "21:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         },
         {
-          "venue_id": 46,
-          "venue_name": "Grillparzerschule - Turnsaal",
-          "region": "Ost",
+          "venue_id": 34,
+          "venue_name": "Leonardo da Vinci Schule - Teilhalle rechts",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-20:00",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "20:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         },
         {
-          "venue_id": 43,
-          "venue_name": "Mozartschule - Turnsaal",
-          "region": "Ost",
+          "venue_id": 77,
+          "venue_name": "Magdalenaschule - Turnsaal",
+          "region": "Nord",
           "available_slots": [
             {
-              "time": "07:00-17:00",
+              "time": "07:00-22:00",
               "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-18:00",
-              "time_from": "17:00",
-              "time_to": "18:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "18:00-21:00",
-              "time_from": "18:00",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
               "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 89,
+          "venue_name": "Mira-Lobe-Schule - Turnsaal 1 rechts",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": null,
+              "status": "blocked",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 88,
+          "venue_name": "Mira-Lobe-Schule - Turnsaal 2 links",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 76,
+          "venue_name": "Pöstlingbergschule - Gymnastiksaal",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 86,
+          "venue_name": "Robinsonschule - Turnsaal",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 50,
+          "venue_name": "Weberschule - Turnsaal EG",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": null,
+              "status": "blocked",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 51,
+          "venue_name": "Weberschule - Turnsaal OG",
+          "region": "Nord",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": null,
+              "status": "blocked",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         }
       ],
-      "total_venues": 10,
-      "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:04:53.485162"
+      "total_venues": 20,
+      "venues_with_slots": 20,
+      "fetched_at": "2026-09-07T11:18:16.920137"
     },
     {
       "date": "20260915",
@@ -39073,7 +38492,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:04:54.901310"
+      "fetched_at": "2026-09-07T11:18:18.232138"
     },
     {
       "date": "20260916",
@@ -39387,7 +38806,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:04:56.375742"
+      "fetched_at": "2026-09-07T11:18:19.373162"
     },
     {
       "date": "20260917",
@@ -39737,7 +39156,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:04:57.900548"
+      "fetched_at": "2026-09-07T11:18:20.735363"
     },
     {
       "date": "20260918",
@@ -40033,7 +39452,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:04:59.359746"
+      "fetched_at": "2026-09-07T11:18:21.994317"
     },
     {
       "date": "20260919",
@@ -40311,7 +39730,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:00.632700"
+      "fetched_at": "2026-09-07T11:18:23.044260"
     },
     {
       "date": "20260920",
@@ -40589,7 +40008,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:01.950157"
+      "fetched_at": "2026-09-07T11:18:24.090086"
     },
     {
       "date": "20260921",
@@ -40930,7 +40349,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:03.350703"
+      "fetched_at": "2026-09-07T11:18:25.207668"
     },
     {
       "date": "20260922",
@@ -41244,7 +40663,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:04.789027"
+      "fetched_at": "2026-09-07T11:18:26.373570"
     },
     {
       "date": "20260923",
@@ -41558,7 +40977,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:06.149604"
+      "fetched_at": "2026-09-07T11:18:27.511168"
     },
     {
       "date": "20260924",
@@ -41908,7 +41327,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:07.568121"
+      "fetched_at": "2026-09-07T11:18:28.659046"
     },
     {
       "date": "20260925",
@@ -42204,7 +41623,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:09.020705"
+      "fetched_at": "2026-09-07T11:18:29.901289"
     },
     {
       "date": "20260926",
@@ -42482,7 +41901,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:10.255281"
+      "fetched_at": "2026-09-07T11:18:30.945226"
     },
     {
       "date": "20260927",
@@ -42760,7 +42179,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:11.506577"
+      "fetched_at": "2026-09-07T11:18:31.963684"
     },
     {
       "date": "20260928",
@@ -43101,7 +42520,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:12.902713"
+      "fetched_at": "2026-09-07T11:18:33.096767"
     },
     {
       "date": "20260929",
@@ -43415,7 +42834,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:14.295984"
+      "fetched_at": "2026-09-07T11:18:34.286117"
     },
     {
       "date": "20260930",
@@ -43711,7 +43130,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:15.706063"
+      "fetched_at": "2026-09-07T11:18:35.445917"
     },
     {
       "date": "20261001",
@@ -44061,7 +43480,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:17.121355"
+      "fetched_at": "2026-09-07T11:18:36.599260"
     },
     {
       "date": "20261002",
@@ -44357,7 +43776,7 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:18.592221"
+      "fetched_at": "2026-09-07T11:18:37.945214"
     },
     {
       "date": "20261003",
@@ -44635,178 +44054,119 @@
       ],
       "total_venues": 10,
       "venues_with_slots": 10,
-      "fetched_at": "2026-09-06T10:05:19.890344"
+      "fetched_at": "2026-09-07T11:18:39.017537"
     },
     {
-      "date": "20260914",
-      "url": "https://book.venuzle.at/stadt-linz/venues/c/7/20260914/ajax/",
-      "region": "West",
+      "date": "20261004",
+      "url": "https://book.venuzle.at/stadt-linz/venues/c/5/20261004/ajax/",
+      "region": "Ost",
       "venues": [
         {
-          "venue_id": 25,
-          "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
-          "region": "West",
+          "venue_id": 29,
+          "venue_name": "Diesterwegschule - 2-fach Halle",
+          "region": "Ost",
           "available_slots": [
             {
-              "time": "07:00-17:30",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "17:30",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "17:30-19:00",
-              "time_from": "17:30",
-              "time_to": "19:00",
-              "price": "58,50",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "39,00",
               "status": "available",
               "is_available": true,
               "reason": null
             },
             {
-              "time": "19:00-21:00",
-              "time_from": "19:00",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
               "time_to": "22:00",
-              "price": "58,50",
-              "status": "available",
-              "is_available": true,
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
               "reason": null
             }
           ]
         },
         {
-          "venue_id": 26,
-          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
-          "region": "West",
+          "venue_id": 30,
+          "venue_name": "Diesterwegschule - Teilhalle links",
+          "region": "Ost",
           "available_slots": [
             {
-              "time": "07:00-17:30",
+              "time": "07:00-08:00",
               "time_from": "07:00",
-              "time_to": "17:30",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "17:30-22:00",
-              "time_from": "17:30",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 27,
-          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-19:00",
-              "time_from": "17:30",
-              "time_to": "19:00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
               "reason": null
             },
             {
-              "time": "19:00-21:00",
-              "time_from": "19:00",
-              "time_to": "21:00",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 31,
+          "venue_name": "Diesterwegschule - Teilhalle rechts",
+          "region": "Ost",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
             },
             {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
               "price": "19,50",
               "status": "available",
               "is_available": true,
               "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 28,
-          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
-          "region": "West",
-          "available_slots": [
+            },
             {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
               "price": null,
               "status": "not_offered",
               "is_available": false,
               "reason": null
-            },
-            {
-              "time": "17:30-22:00",
-              "time_from": "17:30",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
             }
           ]
         },
         {
-          "venue_id": 68,
-          "venue_name": "Dr.-Ernst-Koref-Schule* - Gymnastiksaal",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-21:00",
-              "time_from": "07:00",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 85,
-          "venue_name": "Edmund-Aigner-Schule - Gymnastiksaal",
-          "region": "West",
+          "venue_id": 58,
+          "venue_name": "Diesterwegschule* - Gymnastiksaal",
+          "region": "Ost",
           "available_slots": [
             {
               "time": "07:00-22:00",
@@ -44820,43 +44180,9 @@
           ]
         },
         {
-          "venue_id": 84,
-          "venue_name": "Edmund-Aigner-Schule - Normalhalle",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-16:30",
-              "time_from": "07:00",
-              "time_to": "16:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "16:30-18:30",
-              "time_from": "16:30",
-              "time_to": "18:30",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "18:30-22:00",
-              "time_from": "18:30",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 5,
-          "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
-          "region": "West",
+          "venue_id": 70,
+          "venue_name": "Dorfhalleschule - Turnsaal",
+          "region": "Ost",
           "available_slots": [
             {
               "time": "07:00-22:00",
@@ -44870,9 +44196,111 @@
           ]
         },
         {
-          "venue_id": 6,
-          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
-          "region": "West",
+          "venue_id": 35,
+          "venue_name": "Goetheschule - 2-fach Halle",
+          "region": "Ost",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "39,00",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 36,
+          "venue_name": "Goetheschule - Teilhalle links",
+          "region": "Ost",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 37,
+          "venue_name": "Goetheschule - Teilhalle rechts",
+          "region": "Ost",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 46,
+          "venue_name": "Grillparzerschule - Turnsaal",
+          "region": "Ost",
           "available_slots": [
             {
               "time": "07:00-22:00",
@@ -44886,368 +44314,9 @@
           ]
         },
         {
-          "venue_id": 7,
-          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 8,
-          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 45,
-          "venue_name": "Froschbergschule - Turnsaal",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-19:30",
-              "time_from": "18:00",
-              "time_to": "19:30",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:30-21:00",
-              "time_from": "19:30",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 80,
-          "venue_name": "Hausleitnerweg VS - Normalhalle",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-16:00",
-              "time_from": "07:00",
-              "time_to": "16:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "16:00-22:00",
-              "time_from": "16:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "unavailable",
-              "is_available": false,
-              "reason": "<b>Nicht buchbar</b>"
-            }
-          ]
-        },
-        {
-          "venue_id": 69,
-          "venue_name": "Keferfeldschule - Normalhalle",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-17:00",
-              "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-19:30",
-              "time_from": "17:00",
-              "time_to": "19:30",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:30-21:00",
-              "time_from": "19:30",
-              "time_to": "21:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "21:00-22:00",
-              "time_from": "21:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 74,
-          "venue_name": "Margarethenschule - Gymnastiksaal",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-17:00",
-              "time_from": "07:00",
-              "time_to": "17:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:00-22:00",
-              "time_from": "17:00",
-              "time_to": "22:00",
-              "price": "13,00",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 47,
-          "venue_name": "Otto-Glöckel-Schule - Turnsaal EG",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-20:00",
-              "time_from": "07:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 48,
-          "venue_name": "Otto-Glöckel-Schule - Turnsaal OG",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-20:00",
-              "time_from": "07:00",
-              "time_to": "20:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "20:00-22:00",
-              "time_from": "20:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 44,
-          "venue_name": "Römerbergschule - Turnsaal",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 59,
-          "venue_name": "Spallerhofschule - Normalhalle",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-19:00",
-              "time_from": "07:00",
-              "time_to": "19:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "19:00-22:00",
-              "time_from": "19:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 60,
-          "venue_name": "Spallerhofschule - Turnsaal",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-19:30",
-              "time_from": "17:30",
-              "time_to": "19:30",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            },
-            {
-              "time": "19:30-22:00",
-              "time_from": "19:30",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 78,
-          "venue_name": "Stadlerschule - Normalhalle",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-22:00",
-              "time_from": "07:00",
-              "time_to": "22:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 38,
-          "venue_name": "Stelzhamerschule - Normalhalle UG",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-18:00",
-              "time_from": "07:00",
-              "time_to": "18:00",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "18:00-22:00",
-              "time_from": "18:00",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 39,
-          "venue_name": "Stelzhamerschule - Normalhalle OG",
-          "region": "West",
-          "available_slots": [
-            {
-              "time": "07:00-17:30",
-              "time_from": "07:00",
-              "time_to": "17:30",
-              "price": null,
-              "status": "not_offered",
-              "is_available": false,
-              "reason": null
-            },
-            {
-              "time": "17:30-22:00",
-              "time_from": "17:30",
-              "time_to": "22:00",
-              "price": "19,50",
-              "status": "available",
-              "is_available": true,
-              "reason": null
-            }
-          ]
-        },
-        {
-          "venue_id": 87,
-          "venue_name": "Waldorf Schule - Turnsaal",
-          "region": "West",
+          "venue_id": 43,
+          "venue_name": "Mozartschule - Turnsaal",
+          "region": "Ost",
           "available_slots": [
             {
               "time": "07:00-22:00",
@@ -45261,9 +44330,9 @@
           ]
         }
       ],
-      "total_venues": 24,
-      "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:21.986534"
+      "total_venues": 10,
+      "venues_with_slots": 10,
+      "fetched_at": "2026-09-07T11:18:40.059442"
     },
     {
       "date": "20260915",
@@ -45810,7 +44879,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:23.958089"
+      "fetched_at": "2026-09-07T11:18:41.730234"
     },
     {
       "date": "20260916",
@@ -46384,7 +45453,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:25.822302"
+      "fetched_at": "2026-09-07T11:18:43.379617"
     },
     {
       "date": "20260917",
@@ -47147,7 +46216,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:27.922806"
+      "fetched_at": "2026-09-07T11:18:45.271039"
     },
     {
       "date": "20260918",
@@ -47874,7 +46943,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:30.011423"
+      "fetched_at": "2026-09-07T11:18:47.260412"
     },
     {
       "date": "20260919",
@@ -48376,7 +47445,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:31.728004"
+      "fetched_at": "2026-09-07T11:18:48.859072"
     },
     {
       "date": "20260920",
@@ -48860,7 +47929,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:33.380158"
+      "fetched_at": "2026-09-07T11:18:50.463678"
     },
     {
       "date": "20260921",
@@ -49443,7 +48512,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:35.343327"
+      "fetched_at": "2026-09-07T11:18:52.329516"
     },
     {
       "date": "20260922",
@@ -50062,7 +49131,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:37.274547"
+      "fetched_at": "2026-09-07T11:18:54.087561"
     },
     {
       "date": "20260923",
@@ -50618,7 +49687,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:39.360949"
+      "fetched_at": "2026-09-07T11:18:55.832289"
     },
     {
       "date": "20260924",
@@ -51390,7 +50459,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:41.429807"
+      "fetched_at": "2026-09-07T11:18:57.695449"
     },
     {
       "date": "20260925",
@@ -52117,7 +51186,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:43.461575"
+      "fetched_at": "2026-09-07T11:18:59.539602"
     },
     {
       "date": "20260926",
@@ -52691,7 +51760,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:45.151432"
+      "fetched_at": "2026-09-07T11:19:01.152085"
     },
     {
       "date": "20260927",
@@ -53175,7 +52244,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:46.898802"
+      "fetched_at": "2026-09-07T11:19:02.691975"
     },
     {
       "date": "20260928",
@@ -53758,7 +52827,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:48.954251"
+      "fetched_at": "2026-09-07T11:19:04.689168"
     },
     {
       "date": "20260929",
@@ -54359,7 +53428,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:50.921026"
+      "fetched_at": "2026-09-07T11:19:06.478747"
     },
     {
       "date": "20260930",
@@ -54915,7 +53984,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:52.855713"
+      "fetched_at": "2026-09-07T11:19:08.075881"
     },
     {
       "date": "20261001",
@@ -55669,7 +54738,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:55.026916"
+      "fetched_at": "2026-09-07T11:19:10.018661"
     },
     {
       "date": "20261002",
@@ -56360,7 +55429,7 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:57.124365"
+      "fetched_at": "2026-09-07T11:19:11.942582"
     },
     {
       "date": "20261003",
@@ -56934,7 +56003,563 @@
       ],
       "total_venues": 24,
       "venues_with_slots": 24,
-      "fetched_at": "2026-09-06T10:05:58.959512"
+      "fetched_at": "2026-09-07T11:19:13.459118"
+    },
+    {
+      "date": "20261004",
+      "url": "https://book.venuzle.at/stadt-linz/venues/c/7/20261004/ajax/",
+      "region": "West",
+      "venues": [
+        {
+          "venue_id": 25,
+          "venue_name": "Dr.-Ernst-Koref-Schule - 3-fach Halle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "58,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 26,
+          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 1",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 27,
+          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 2",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 28,
+          "venue_name": "Dr.-Ernst-Koref-Schule - Teilhalle 3",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 68,
+          "venue_name": "Dr.-Ernst-Koref-Schule* - Gymnastiksaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 85,
+          "venue_name": "Edmund-Aigner-Schule - Gymnastiksaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 84,
+          "venue_name": "Edmund-Aigner-Schule - Normalhalle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 5,
+          "venue_name": "Ferdinand-Hüttner-Schule - 3-fach Halle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "58,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 6,
+          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 1",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 7,
+          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 2",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 8,
+          "venue_name": "Ferdinand-Hüttner-Schule - Teilhalle 3",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 45,
+          "venue_name": "Froschbergschule - Turnsaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 80,
+          "venue_name": "Hausleitnerweg VS - Normalhalle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 69,
+          "venue_name": "Keferfeldschule - Normalhalle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 74,
+          "venue_name": "Margarethenschule - Gymnastiksaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 47,
+          "venue_name": "Otto-Glöckel-Schule - Turnsaal EG",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 48,
+          "venue_name": "Otto-Glöckel-Schule - Turnsaal OG",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 44,
+          "venue_name": "Römerbergschule - Turnsaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 59,
+          "venue_name": "Spallerhofschule - Normalhalle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 60,
+          "venue_name": "Spallerhofschule - Turnsaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 78,
+          "venue_name": "Stadlerschule - Normalhalle",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-08:00",
+              "time_from": "07:00",
+              "time_to": "08:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            },
+            {
+              "time": "08:00-09:00",
+              "time_from": "08:00",
+              "time_to": "09:00",
+              "price": "19,50",
+              "status": "available",
+              "is_available": true,
+              "reason": null
+            },
+            {
+              "time": "09:00-22:00",
+              "time_from": "09:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 38,
+          "venue_name": "Stelzhamerschule - Normalhalle UG",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 39,
+          "venue_name": "Stelzhamerschule - Normalhalle OG",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        },
+        {
+          "venue_id": 87,
+          "venue_name": "Waldorf Schule - Turnsaal",
+          "region": "West",
+          "available_slots": [
+            {
+              "time": "07:00-22:00",
+              "time_from": "07:00",
+              "time_to": "22:00",
+              "price": null,
+              "status": "not_offered",
+              "is_available": false,
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "total_venues": 24,
+      "venues_with_slots": 24,
+      "fetched_at": "2026-09-07T11:19:15.047208"
     }
   ]
 }
